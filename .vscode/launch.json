@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-GenshinImpactApplication<genshin-impact>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.api.genshinimpact.GenshinImpactApplication",
+      "projectName": "genshin-impact",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
