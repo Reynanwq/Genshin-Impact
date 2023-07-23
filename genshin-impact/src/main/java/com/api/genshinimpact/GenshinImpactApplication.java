@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GenshinImpactApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(GenshinImpactApplication.class, args);
 	}
 
