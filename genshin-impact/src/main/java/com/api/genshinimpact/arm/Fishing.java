@@ -11,4 +11,36 @@ public class Fishing {
     private String fish_name;
     @Column(nullable = false)
     private String localization;
+
+    @Deprecated
+    public Fishing(){};
+    public Fishing(Integer id, String fish_name, String localization) {
+        this.id = id;
+        this.fish_name = fish_name;
+        this.localization = localization;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getFish_name() {
+        return fish_name;
+    }
+
+    public void setFish_name(String fish_name) {
+        this.fish_name = fish_name;
+    }
+
+    public String getLocalization() {
+        return localization;
+    }
+
+    public void setLocalization(String localization) {
+        this.localization = localization;
+    }
 }
