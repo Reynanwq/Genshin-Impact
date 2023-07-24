@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "player")
-public class player {
+public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
@@ -23,8 +23,8 @@ public class player {
     private Integer currency;
 
     @Deprecated
-    public player(){}
-    public player(Integer id, String player_name, String player_email, String player_password, Integer level, Integer experience, Integer currency) {
+    public Player(){}
+    public Player(Integer id, String player_name, String player_email, String player_password, Integer level, Integer experience, Integer currency) {
         this.id = id;
         this.player_name = player_name;
         this.player_email = player_email;

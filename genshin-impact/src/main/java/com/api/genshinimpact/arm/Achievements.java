@@ -78,4 +78,16 @@ public class Achievements {
     public void setTotal_amount_rarity(Integer total_amount_rarity) {
         this.total_amount_rarity = total_amount_rarity;
     }
+
+    @Override
+    public String toString() {
+        return "Achievements{" +
+                "id=" + id +
+                ", achievements_topic='" + achievements_topic + '\'' +
+                ", achievements_name='" + achievements_name + '\'' +
+                ", achievements_description='" + achievements_description + '\'' +
+                ", rarity=" + rarity +
+                ", total_amount_rarity=" + total_amount_rarity +
+                '}';
+    }
 }
