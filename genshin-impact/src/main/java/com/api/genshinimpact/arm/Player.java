@@ -89,4 +89,17 @@ public class Player {
     public void setCurrency(Integer currency) {
         this.currency = currency;
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", player_name='" + player_name + '\'' +
+                ", player_email='" + player_email + '\'' +
+                ", player_password='" + player_password + '\'' +
+                ", level=" + level +
+                ", experience=" + experience +
+                ", currency=" + currency +
+                '}';
+    }
 }

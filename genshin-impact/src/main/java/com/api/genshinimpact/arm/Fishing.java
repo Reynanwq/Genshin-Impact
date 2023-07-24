@@ -43,4 +43,13 @@ public class Fishing {
     public void setLocalization(String localization) {
         this.localization = localization;
     }
+
+    @Override
+    public String toString() {
+        return "Fishing{" +
+                "id=" + id +
+                ", fish_name='" + fish_name + '\'' +
+                ", localization='" + localization + '\'' +
+                '}';
+    }
 }

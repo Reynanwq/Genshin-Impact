@@ -99,4 +99,18 @@ public class Updates {
     public void setPath_characters_limited(String path_characters_limited) {
         this.path_characters_limited = path_characters_limited;
     }
+
+    @Override
+    public String toString() {
+        return "Updates{" +
+                "id=" + id +
+                ", path_version='" + path_version + '\'' +
+                ", path_name='" + path_name + '\'' +
+                ", path_status='" + path_status + '\'' +
+                ", path_weapons='" + path_weapons + '\'' +
+                ", path_characters='" + path_characters + '\'' +
+                ", path_time='" + path_time + '\'' +
+                ", path_characters_limited='" + path_characters_limited + '\'' +
+                '}';
+    }
 }

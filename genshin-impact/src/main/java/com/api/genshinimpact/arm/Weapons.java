@@ -120,4 +120,20 @@ public class Weapons {
     public void setAmounts_stars(Integer amounts_stars) {
         this.amounts_stars = amounts_stars;
     }
+
+    @Override
+    public String toString() {
+        return "Weapons{" +
+                "id=" + id +
+                ", achievements_name='" + achievements_name + '\'' +
+                ", type='" + type + '\'' +
+                ", achievements_description='" + achievements_description + '\'' +
+                ", basic_attack=" + basic_attack +
+                ", basic_defense=" + basic_defense +
+                ", crit_damage=" + crit_damage +
+                ", level=" + level +
+                ", ascension=" + ascension +
+                ", amounts_stars=" + amounts_stars +
+                '}';
+    }
 }

@@ -66,4 +66,15 @@ public class Food {
     public void setFood_type(String food_type) {
         this.food_type = food_type;
     }
+
+    @Override
+    public String toString() {
+        return "Food{" +
+                "id=" + id +
+                ", food_name='" + food_name + '\'' +
+                ", food_description='" + food_description + '\'' +
+                ", rarity=" + rarity +
+                ", food_type='" + food_type + '\'' +
+                '}';
+    }
 }

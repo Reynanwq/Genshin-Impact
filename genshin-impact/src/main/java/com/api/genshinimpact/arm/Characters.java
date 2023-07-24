@@ -121,4 +121,20 @@ public class Characters {
     public void setConstellations(String constellations) {
         this.constellations = constellations;
     }
+
+    @Override
+    public String toString() {
+        return "Characters{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", level=" + level +
+                ", description='" + description + '\'' +
+                ", release_date='" + release_date + '\'' +
+                ", gender='" + gender + '\'' +
+                ", skills='" + skills + '\'' +
+                ", passive_talent='" + passive_talent + '\'' +
+                ", constellations='" + constellations + '\'' +
+                '}';
+    }
 }

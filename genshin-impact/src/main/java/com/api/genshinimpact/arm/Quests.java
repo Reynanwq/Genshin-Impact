@@ -88,4 +88,17 @@ public class Quests {
     public void setAdventure_rank(Integer adventure_rank) {
         this.adventure_rank = adventure_rank;
     }
+
+    @Override
+    public String toString() {
+        return "Quests{" +
+                "id=" + id +
+                ", quests_name='" + quests_name + '\'' +
+                ", quests_description='" + quests_description + '\'' +
+                ", quests_reward='" + quests_reward + '\'' +
+                ", quests_chapter='" + quests_chapter + '\'' +
+                ", quests_acts='" + quests_acts + '\'' +
+                ", adventure_rank=" + adventure_rank +
+                '}';
+    }
 }

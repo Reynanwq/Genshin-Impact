@@ -55,4 +55,14 @@ public class Potions {
     public void setEffect(String effect) {
         this.effect = effect;
     }
+
+    @Override
+    public String toString() {
+        return "Potions{" +
+                "id=" + id +
+                ", potion_name='" + potion_name + '\'' +
+                ", rarity=" + rarity +
+                ", effect='" + effect + '\'' +
+                '}';
+    }
 }

@@ -99,4 +99,18 @@ public class StatisticCharacters {
     public void setDamage_bonus(Integer damage_bonus) {
         this.damage_bonus = damage_bonus;
     }
+
+    @Override
+    public String toString() {
+        return "StatisticCharacters{" +
+                "id=" + id +
+                ", name_characters='" + name_characters + '\'' +
+                ", level=" + level +
+                ", ascender=" + ascender +
+                ", basic_life=" + basic_life +
+                ", basic_attack=" + basic_attack +
+                ", basic_defense=" + basic_defense +
+                ", damage_bonus=" + damage_bonus +
+                '}';
+    }
 }
