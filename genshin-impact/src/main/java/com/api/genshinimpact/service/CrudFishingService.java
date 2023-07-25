@@ -12,7 +12,7 @@ public class CrudFishingService {
     }
 
     public void insertData(){
-        Fishing fishing0 = new Fishing();
+        Fishing fishing0 = new Fishing(0, "", "");
         this.fishingRepository.save(fishing0);
     }
 }

@@ -11,7 +11,7 @@ public class CrudPotionsService {
         this.potionsRepository = potionsRepository;
     }
     public void insertData(){
-        Potions potions0 = new Potions();
+        Potions potions0 = new Potions(0, "", 0, "");
         this.potionsRepository.save(potions0);
     }
 }

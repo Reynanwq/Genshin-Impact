@@ -12,7 +12,7 @@ public class CrudPlayerService {
     }
 
     public void insertData(){
-        Player player0 = new Player();
+        Player player0 = new Player(0, "", "", "", 0, 0, 0);
         this.playerRepository.save(player0);
     }
 }

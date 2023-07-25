@@ -13,7 +13,7 @@ public class CrudFoodService {
     }
 
     public void insertData(){
-        Food food0 = new Food();
+        Food food0 = new Food(0, "", "", 0, "");
         this.foodRepository.save(food0);
     }
 }

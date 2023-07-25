@@ -12,7 +12,7 @@ public class CrudStatisticCharactersService {
         this.statisticCharactersRepository = statisticCharactersRepository;
     }
     public void insertData(){
-        StatisticCharacters statisticCharacters0 = StatisticCharacters();
+        StatisticCharacters statisticCharacters0 = new StatisticCharacters(0, "", 0, 0, 0, 0, 0, 0);
         this.statisticCharactersRepository.save(statisticCharacters0);
     }
 }

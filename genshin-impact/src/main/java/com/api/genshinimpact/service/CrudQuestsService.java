@@ -12,7 +12,7 @@ public class CrudQuestsService {
     }
 
     public void insertData(){
-        Quests quests0 = new Quests();
+        Quests quests0 = new Quests(0, "", "", "", "", "", 0);
         this.questsRepository.save(quests0);
 
     }

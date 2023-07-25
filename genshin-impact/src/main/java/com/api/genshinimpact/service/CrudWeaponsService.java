@@ -11,7 +11,7 @@ public class CrudWeaponsService {
         this.weaponsRepository = weaponsRepository;
     }
     public void insertData(){
-        Weapons weapons0 = Weapons();
+        Weapons weapons0 = new Weapons(0, "", "", "", 0, 0, 0, 0, 0, 0);
         this.weaponsRepository.save(weapons0);
     }
 }

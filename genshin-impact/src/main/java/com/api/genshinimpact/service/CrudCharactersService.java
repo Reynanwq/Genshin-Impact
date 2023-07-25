@@ -12,7 +12,7 @@ public class CrudCharactersService {
         this.charactersRepository = charactersRepository;
     }
     public void insertData(){
-        Characters characters0 = new Characters();
+        Characters characters0 = new Characters(0, "", "", 0, "", "", "", "", "", "");
         this.charactersRepository.save(characters0);
     }
 }

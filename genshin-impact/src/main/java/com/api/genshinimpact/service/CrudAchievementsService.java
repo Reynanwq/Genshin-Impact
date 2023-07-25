@@ -12,8 +12,11 @@ public class CrudAchievementsService {
     }
 
     public void insertData(){
-        Achievements achievements0 = new Achievements(1, "apenas_teste", "only_Teste", "DEDAED", 1, 1);
-        this.achievementsRepository.save(achievements0);
-        System.out.println(achievements0);
+        Achievements  = new Achievements(1, "", "", "", 0, 0);
+
+        this.achievementsRepository.save();
+
+        System.out.println("Achievements save in database");
     }
+
 }
