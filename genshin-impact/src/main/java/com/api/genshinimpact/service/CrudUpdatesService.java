@@ -59,4 +59,12 @@ public class CrudUpdatesService {
 
         System.out.println("Patch save in database");
     }
+
+    //----------- SELECIONAR DADOS DA TABELA UPDATES------
+    public void selectData(){
+        Iterable<Updates> updates = this.updatesRepository.findAll();
+        for (Updates update : updates){
+            System.out.println(update);
+        }
+    };
 }

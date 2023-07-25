@@ -1,6 +1,7 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.arm.Quests;
+import com.api.genshinimpact.arm.Updates;
 import com.api.genshinimpact.repository.QuestsRepository;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,13 @@ public class CrudQuestsService {
     public void insertData(){
         Quests quests0 = new Quests(0, "", "", "", "", "", 0);
         this.questsRepository.save(quests0);
-
     }
+
+    //----------- SELECIONAR DADOS DA TABELA QUESTS------
+    public void selectData(){
+        Iterable<Quests> quests = this.questsRepository.findAll();
+        for (Quests quest : quests){
+            System.out.println(quest);
+        }
+    };
 }

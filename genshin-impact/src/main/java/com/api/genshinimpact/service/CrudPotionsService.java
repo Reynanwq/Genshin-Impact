@@ -1,6 +1,7 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.arm.Potions;
+import com.api.genshinimpact.arm.Updates;
 import com.api.genshinimpact.repository.PotionsRepository;
 import org.springframework.stereotype.Service;
 
@@ -14,4 +15,12 @@ public class CrudPotionsService {
         Potions potions0 = new Potions(0, "", 0, "");
         this.potionsRepository.save(potions0);
     }
+
+    //----------- SELECIONAR DADOS DA TABELA POTIONS ------
+    public void selectData(){
+        Iterable<Potions> potions = this.potionsRepository.findAll();
+        for (Potions potion : potions){
+            System.out.println(potion);
+        }
+    };
 }

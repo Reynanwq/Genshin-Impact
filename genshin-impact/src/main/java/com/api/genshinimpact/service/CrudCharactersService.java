@@ -1,6 +1,7 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.arm.Characters;
+import com.api.genshinimpact.arm.Updates;
 import com.api.genshinimpact.repository.CharactersRepository;
 import org.springframework.stereotype.Service;
 
@@ -15,4 +16,12 @@ public class CrudCharactersService {
         Characters characters0 = new Characters(0, "", "", 0, "", "", "", "", "", "");
         this.charactersRepository.save(characters0);
     }
+
+    //----------- SELECIONAR DADOS DA TABELA CHARACTERS ------
+    public void selectData(){
+        Iterable<Characters> characters = this.charactersRepository.findAll();
+        for (Characters characters1 : characters){
+            System.out.println(characters1);
+        }
+    };
 }

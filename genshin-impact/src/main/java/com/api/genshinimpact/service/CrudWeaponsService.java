@@ -14,4 +14,12 @@ public class CrudWeaponsService {
         Weapons weapons0 = new Weapons(0, "", "", "", 0, 0, 0, 0, 0, 0);
         this.weaponsRepository.save(weapons0);
     }
+
+    //----------- SELECIONAR DADOS DA TABELA WEAPONS ------
+    public void selectData(){
+        Iterable<Weapons> weapons = this.weaponsRepository.findAll();
+        for(Weapons weapon : weapons){
+            System.out.println(weapon);
+        }
+    }
 }
