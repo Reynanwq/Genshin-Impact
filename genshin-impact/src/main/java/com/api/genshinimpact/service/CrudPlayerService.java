@@ -13,6 +13,8 @@ public class CrudPlayerService {
     }
 
     public void insertData(){
+
+        //ESTARÁ RELACIONADO COM UM PROVAVEL SISTEMA DE AUTENTICAÇÃO DE USUARIO - FAVOR, IGNORE ESTE ARQUIVO, NO MOMENTO.
         Player player0 = new Player(0, "", "", "", 0, 0, 0);
         this.playerRepository.save(player0);
     }
