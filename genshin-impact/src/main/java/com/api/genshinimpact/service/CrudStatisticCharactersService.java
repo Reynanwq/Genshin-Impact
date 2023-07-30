@@ -715,7 +715,7 @@ public class CrudStatisticCharactersService {
 */
 
         this.statisticCharactersRepository.save(Albedo_1_20);
-        Sytem.out.println("Save Statistic in database");
+        System.out.println("Save Statistic in database");
     }
 
     //----------- SELECIONAR DADOS DA TABELA STATISTIC CHARACTERS------

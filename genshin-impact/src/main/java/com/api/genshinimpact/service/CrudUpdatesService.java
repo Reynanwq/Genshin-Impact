@@ -10,7 +10,7 @@ public class CrudUpdatesService {
         this.updatesRepository = updatesRepository;
     }
 
-    public void insertData(){3
+    public void insertData(){
         Updates path1_0 = new Updates(1, "Patch 1.0", "Poema em Taças", "FINALIZADO", "Falcão e Arco de Amos", "Barbara | Fischl | Xiangling", "27/Set - 18/Out de 2020", "Venti");
         Updates path1_1 = new Updates(2, "Patch 1.1", "Despedida para o Norte", "FINALIZADO", "Harpa Celestial | Memórias de Poeira", "Diona | Beidou | Ningguang", "11/Nov - 01/Dez de 2020", "Tartaglia");
         Updates path1_2 = new Updates(3, "Patch 1.2", "Noticias Enigmáticas", "FINALIZADO", "Cortadora de Montanhas | Atlas Celestial", "Bennett | Fischl | Sucrose", "23/Dez de 2020 - 12/Jan de 2021", "Albedo");
