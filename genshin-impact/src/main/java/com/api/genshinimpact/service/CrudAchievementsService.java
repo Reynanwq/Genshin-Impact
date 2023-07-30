@@ -13,7 +13,8 @@ public class CrudAchievementsService {
     }
 
     public void insertData(){
-        Achievements Contos_de_Loucura_Monstruosa = new Achievements(1, "Maravilhas do Mundo", "Contos de Loucura Monstruosa", "Colete toa a série Contos da Rua Toki", 5, 2855);
+        Achievements contos_de_loucura_monstruosa = new Achievements(1, "Maravilhas do Mundo", "Contos de Loucura Monstruosa", "Colete toa a série Contos da Rua Toki", 5, 2855);
+/*
         Achievements  = new Achievements(1, "Maravilhas do Mundo", "", "", 0, 2855);
         Achievements  = new Achievements(1, "Maravilhas do Mundo", "", "", 0, 2855);
         Achievements  = new Achievements(1, "Maravilhas do Mundo", "", "", 0, 2855);
@@ -521,9 +522,9 @@ public class CrudAchievementsService {
         Achievements  = new Achievements(1, "Andarilho do Mundo Mortal: Série II", "", "", 0, 25);
         Achievements  = new Achievements(1, "Andarilho do Mundo Mortal: Série II", "", "", 0, 25);
         Achievements  = new Achievements(1, "Andarilho do Mundo Mortal: Série II", "", "", 0, 25);
-        Achievements  = new Achievements(1, "Andarilho do Mundo Mortal: Série II", "", "", 0, 25);
+        Achievements  = new Achievements(1, "Andarilho do Mundo Mortal: Série II", "", "", 0, 25);*/
 
-        this.achievementsRepository.save();
+        this.achievementsRepository.save(contos_de_loucura_monstruosa);
         System.out.println("Achievements save in database");
     }
 

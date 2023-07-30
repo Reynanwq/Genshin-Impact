@@ -24,7 +24,7 @@ public class CrudCharactersService {
         Characters Beidou = new Characters(8, "Beidou", "Frota Crux", 1-90, "Líder da Frota Crux. Ela é uma chefe sem limites e franca.", "01/2022", "Feminino", "Ataque Normal: Conquista do Oceano | Invocadora da Maré | Quebrador de Tempestades", "Retribuição | Tormenta Elétrica | Conquistadora das Marés", "Flagelo da Fera do Mar | Sobre o Mar Turbulento, o Trovão Surge | Invocadora da Tempestade | Vingança Impressionante | Caminhante da Maré Carmesim | Destruição do Mal");
         Characters Bennett = new Characters(9, "Bennett", "Guilda de Aventureiros", 1-90, "Um aventureiro de Mondstadt justo e bondoso, mas muito azarado.", "03/2022", "Masculino", "Ataque Normal: Espada da Sorte | Sobrecarga de Paixão | Viagem Fantástica", "Ressurgimento da Paixão | Fervor Intrépido | Deve Ser Seguro...", "Grande Expectativa | Escape da Desolação | Paixão Ardente | Odisseia Inesperada | O Verdadeiro Explorador | Fogo e Coragem");
         Characters Candance = new Characters(10, "Candance", "Vila Aaru", 1-90, "Guardiã da Vila Aaru, descendente do Rei Deshret, seu olho esquerdo é da cor do âmbar.", "09/2022", "Feminina", "Ataque Normal: Lança Reluzente - Postura Guardiã | Ritual Sagrado: Garça Guardiã | Ritual Sagrado: Maré dos Alvéolas", "Proteção Plúmea | Arco das Areias | Aurora Primordial", "Herdeira das Areias Escarlates Ressurgida | Brilho Perfura-Luas | Devoção a Caça | Juramento da Sentinela | Olhos Douradouros | Inundação");
-        Characters Collei = new Characters(11, "Collei", "", 1-90, "", "08/2022", "Feminino", "", "", "");
+        /*Characters Collei = new Characters(11, "Collei", "", 1-90, "", "08/2022", "Feminino", "", "", "");
         Characters Cyno = new Characters(12, "Cyno", "", 1-90, "", "03/2023", "Masculino", "", "", "");
         Characters Dehya = new Characters(13, "Dehya", "", 1-90, "", "03/2023", "Feminino", "", "", "");
         Characters Diluc = new Characters(14, "Diluc", "", 1-90, "", "09/2020", "Masculino", "", "", "");
@@ -83,7 +83,7 @@ public class CrudCharactersService {
         Characters Yelan = new Characters(67, "Yelan", "", 1-90, "", "05/2022", "Feminino", "", "", "");
         Characters Yoimiya = new Characters(68, "Yoimiya", "", 1-90, "", "08/2021", "Feminino", "", "", "");
         Characters Yunjin = new Characters(69, "Yunjin", "", 1-90, "", "01/2022", "Feminino", "", "", "");
-        Characters Zhongli = new Characters(70, "Zhongli", "", 1-90, "", "12/2020", "Masculino", "", "", "");
+        Characters Zhongli = new Characters(70, "Zhongli", "", 1-90, "", "12/2020", "Masculino", "", "", "");*/
 
         //---------- SALVANDO NO BANCO DE DADOS
         this.charactersRepository.save(albedo);
@@ -96,6 +96,7 @@ public class CrudCharactersService {
         this.charactersRepository.save(Beidou);
         this.charactersRepository.save(Barbara);
         this.charactersRepository.save(Candance);
+/*
         this.charactersRepository.save(Collei);
         this.charactersRepository.save(Cyno);
         this.charactersRepository.save(Dehya);
@@ -155,7 +156,7 @@ public class CrudCharactersService {
         this.charactersRepository.save(Yelan);
         this.charactersRepository.save(Yoimiya);
         this.charactersRepository.save(Yunjin);
-        this.charactersRepository.save(Zhongli);
+        this.charactersRepository.save(Zhongli);*/
 
         System.out.println("Characters save in database");
     }

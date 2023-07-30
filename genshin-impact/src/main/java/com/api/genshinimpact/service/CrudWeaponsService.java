@@ -12,8 +12,8 @@ public class CrudWeaponsService {
     }
     public void insertData(){
         Weapons agitação_trovejante = new Weapons(1, "Agitação Trovejante", "Arco", "Um arco longo que foi dado a alguém pela Shogun. Ele emite raios que nunca se apagam.", 46, 0, 14, 1, 0, 5);
-        Weapons weapons0 = new Weapons(2, "", "", "", 0, 0, 0, 0, 0, 0);
-        Weapons weapons0 = new Weapons(3, "", "", "", 0, 0, 0, 0, 0, 0);
+        Weapons aqua_simulacra = new Weapons(2, "Aqua Simulacra", "Arco", "A cor desse arco longo muda imprevisivelmente. Sob a luz, possui um brilho azulado como água.", 44, 0, 19, 1, 0, 5);
+       /* Weapons weapons0 = new Weapons(3, "", "", "", 0, 0, 0, 0, 0, 0);
         Weapons weapons0 = new Weapons(4, "", "", "", 0, 0, 0, 0, 0, 0);
         Weapons weapons0 = new Weapons(5, "", "", "", 0, 0, 0, 0, 0, 0);
         Weapons weapons0 = new Weapons(6, "", "", "", 0, 0, 0, 0, 0, 0);
@@ -100,9 +100,10 @@ public class CrudWeaponsService {
         Weapons weapons0 = new Weapons(87, "", "", "", 0, 0, 0, 0, 0, 0);
         Weapons weapons0 = new Weapons(88, "", "", "", 0, 0, 0, 0, 0, 0);
         Weapons weapons0 = new Weapons(89, "", "", "", 0, 0, 0, 0, 0, 0);
-        Weapons weapons0 = new Weapons(90, "", "", "", 0, 0, 0, 0, 0, 0);
+        Weapons weapons0 = new Weapons(90, "", "", "", 0, 0, 0, 0, 0, 0);*/
 
         this.weaponsRepository.save(agitação_trovejante);
+        this.weaponsRepository.save(aqua_simulacra);
         System.out.println("Save weapons in database");
     }
 
