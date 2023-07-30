@@ -13,21 +13,10 @@ public class CrudPotionsService {
     }
     public void insertData(){
         Potions pocao_dentrocida = new Potions(1, "Poção Dendrocida", 3, "Aumenta RES Dentro de todos os membros da Equipe em 25% por 300s.");
-        Potions potions0 = new Potions(2, "", 0, "");
-        Potions potions0 = new Potions(3, "", 0, "");
-        Potions potions0 = new Potions(4, "", 0, "");
-        Potions potions0 = new Potions(5, "", 0, "");
-        Potions potions0 = new Potions(6, "", 0, "");
-        Potions potions0 = new Potions(7, "", 0, "");
-        Potions potions0 = new Potions(8, "", 0, "");
-        Potions potions0 = new Potions(9, "", 0, "");
-        Potions potions0 = new Potions(10, "", 0, "");
-        Potions potions0 = new Potions(11, "", 0, "");
-        Potions potions0 = new Potions(12, "", 0, "");
-        Potions potions0 = new Potions(13, "", 0, "");
-        Potions potions0 = new Potions(14, "", 0, "");
+        Potions pocao_protetora = new Potions(2, "Poção Protetora", 3, "Aumenta a RES Dendro de todos os membros da Equipe em 25% por 300s.");
 
         this.potionsRepository.save(pocao_dentrocida);
+        this.potionsRepository.save(pocao_protetora);
         System.out.println("Save potions on database");
     }
 
