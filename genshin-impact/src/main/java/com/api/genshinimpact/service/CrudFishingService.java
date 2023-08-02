@@ -1,7 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.Fishing;
-import com.api.genshinimpact.arm.Updates;
+import com.api.genshinimpact.entities.Fishing;
 import com.api.genshinimpact.repository.FishingRepository;
 import org.springframework.stereotype.Service;
 

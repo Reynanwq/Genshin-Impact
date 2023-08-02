@@ -1,6 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.Updates;
+import com.api.genshinimpact.entities.Updates;
 import com.api.genshinimpact.repository.UpdatesRepository;
 import org.springframework.stereotype.Service;
 @Service

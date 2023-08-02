@@ -1,7 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.StatisticCharacters;
-import com.api.genshinimpact.arm.Updates;
+import com.api.genshinimpact.entities.StatisticCharacters;
 import com.api.genshinimpact.repository.StatisticCharactersRepository;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.Food;
-import com.api.genshinimpact.arm.Updates;
+import com.api.genshinimpact.entities.Food;
 import com.api.genshinimpact.repository.FoodRepository;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.Player;
-import com.api.genshinimpact.arm.Updates;
+import com.api.genshinimpact.entities.Player;
 import com.api.genshinimpact.repository.PlayerRepository;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.Characters;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.repository.CharactersRepository;
 import org.springframework.stereotype.Service;
 

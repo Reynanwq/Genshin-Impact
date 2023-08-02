@@ -1,6 +1,6 @@
 package com.api.genshinimpact.repository;
 
-import com.api.genshinimpact.arm.StatisticCharacters;
+import com.api.genshinimpact.entities.StatisticCharacters;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

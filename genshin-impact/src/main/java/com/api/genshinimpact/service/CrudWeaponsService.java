@@ -1,6 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.Weapons;
+import com.api.genshinimpact.entities.Weapons;
 import com.api.genshinimpact.repository.WeaponsRepository;
 import org.springframework.stereotype.Service;
 

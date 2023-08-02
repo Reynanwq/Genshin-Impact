@@ -1,7 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.Potions;
-import com.api.genshinimpact.arm.Updates;
+import com.api.genshinimpact.entities.Potions;
 import com.api.genshinimpact.repository.PotionsRepository;
 import org.springframework.stereotype.Service;
 

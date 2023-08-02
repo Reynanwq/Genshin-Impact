@@ -1,4 +1,4 @@
-package com.api.genshinimpact.arm;
+package com.api.genshinimpact.entities;
 
 import jakarta.persistence.*;
 

@@ -1,6 +1,6 @@
 package com.api.genshinimpact.service;
 
-import com.api.genshinimpact.arm.Achievements;
+import com.api.genshinimpact.entities.Achievements;
 import com.api.genshinimpact.repository.AchievementsRepository;
 import org.springframework.stereotype.Service;
 
