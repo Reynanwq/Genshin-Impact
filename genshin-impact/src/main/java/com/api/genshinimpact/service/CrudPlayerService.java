@@ -1,21 +1,23 @@
 package com.api.genshinimpact.service;
 
+import com.api.genshinimpact.dto.PlayerDTO;
 import com.api.genshinimpact.entities.Player;
 import com.api.genshinimpact.repository.PlayerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CrudPlayerService {
-    private PlayerRepository playerRepository;
+    private final PlayerRepository playerRepository;
+    @Autowired
     public CrudPlayerService(PlayerRepository playerRepository){
         this.playerRepository = playerRepository;
     }
 
     public void insertData(){
-
-        //ESTARÁ RELACIONADO COM UM PROVAVEL SISTEMA DE AUTENTICAÇÃO DE USUARIO - FAVOR, IGNORE ESTE ARQUIVO, NO MOMENTO.
-        Player player0 = new Player(0, "", "", "", 0, 0, 0);
+        Player player0 = new Player(1, "Reynan Paiva", "reynanwq@gmail.com", "deathmcpe!@##!#fdsfdffk", 65, 4, 2);
         this.playerRepository.save(player0);
+        System.out.println("PLAYER SAVE IN DATABASE");
     }
 
     //----------- SELECIONAR DADOS DA TABELA PLAYER------
@@ -24,5 +26,11 @@ public class CrudPlayerService {
         for (Player player : players){
             System.out.println(player);
         }
+    };
+
+    public PlayerDTO findById(Integer id){
+       Player obj =  playerRepository.findById(id).get();
+       PlayerDTO dto = new PlayerDTO(obj);
+       return dto;
     };
 }
