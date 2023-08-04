@@ -6,6 +6,8 @@ import com.api.genshinimpact.repository.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.NoSuchElementException;
+
 @Service
 public class CrudPlayerService {
     private final PlayerRepository playerRepository;
@@ -29,8 +31,11 @@ public class CrudPlayerService {
     };
 
     public PlayerDTO findById(Integer id){
-       Player obj =  playerRepository.findById(id).get();
-       PlayerDTO dto = new PlayerDTO(obj);
-       return dto;
+        try {
+            Player obj = playerRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Player not found in database with id: " + id));
+            return new PlayerDTO(obj);
+        }catch (NoSuchElementException ex) {
+            return null;
+        }
     };
 }

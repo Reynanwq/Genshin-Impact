@@ -1,12 +1,18 @@
 package com.api.genshinimpact.service;
 
+import com.api.genshinimpact.dto.AchievementsDTO;
 import com.api.genshinimpact.entities.Achievements;
 import com.api.genshinimpact.repository.AchievementsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.NoSuchElementException;
 
 @Service
 public class CrudAchievementsService {
-    private AchievementsRepository achievementsRepository;
+    private final AchievementsRepository achievementsRepository;
+
+    @Autowired
     public CrudAchievementsService(AchievementsRepository achievementsRepository){
         this.achievementsRepository = achievementsRepository;
     }
@@ -534,5 +540,14 @@ public class CrudAchievementsService {
             System.out.println(achievement);
         }
     };
+
+    public AchievementsDTO findById(Integer id){
+        try {
+            Achievements obj = achievementsRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Achievement not found with id: " + id));
+            return new AchievementsDTO(obj);
+        } catch (NoSuchElementException ex) {
+            return null;
+        }
+    }
 
 }
