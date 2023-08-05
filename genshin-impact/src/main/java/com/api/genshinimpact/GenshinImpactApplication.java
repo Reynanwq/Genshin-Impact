@@ -36,7 +36,7 @@ public class GenshinImpactApplication implements CommandLineRunner {
 		this.achievementsService = achievementsService;
 		this.charactersService = charactersService;
 		this.fishingService = fishingService;
-		this.foodService = foodService;postman
+		this.foodService = foodService;
 		this.playerService = playerService;
 		this.potionsService = potionsService;
 		this.questsService = questsService;

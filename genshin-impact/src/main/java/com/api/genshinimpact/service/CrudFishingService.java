@@ -3,6 +3,7 @@ package com.api.genshinimpact.service;
 import com.api.genshinimpact.dto.FishingDTO;
 import com.api.genshinimpact.entities.Fishing;
 import com.api.genshinimpact.repository.FishingRepository;
+import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
@@ -105,7 +106,7 @@ public class CrudFishingService {
 
     public FishingDTO findById(Integer id){
         Fishing obj = fishingRepository.findById(id).orElseThrow(
-                () -> new NoSuchElementException("Fish not found in database with id: " + id)
+                () -> new EntityNotFoundException("Fish not found in database with id: " + id)
         );
         return new FishingDTO(obj);
     }

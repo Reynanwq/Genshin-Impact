@@ -3,6 +3,7 @@ package com.api.genshinimpact.service;
 import com.api.genshinimpact.dto.QuestsDTO;
 import com.api.genshinimpact.entities.Quests;
 import com.api.genshinimpact.repository.QuestsRepository;
+import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
@@ -97,7 +98,7 @@ public class CrudQuestsService {
 
     public QuestsDTO findById(Integer id){
         Quests obj = questsRepository.findById(id).orElseThrow(
-                () -> new NoSuchElementException("Quest not found in database with id" + id)
+                () -> new EntityNotFoundException("Quest not found in database with id " + id)
         );
         return new QuestsDTO(obj);
     }

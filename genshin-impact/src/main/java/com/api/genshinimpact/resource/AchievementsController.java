@@ -18,6 +18,6 @@ public class AchievementsController {
 
     @GetMapping(value = "/{id}")
     public AchievementsDTO findById(@PathVariable Integer id){
-        return   achievementsService.findById(id);
+        return achievementsService.findById(id);
     }
 }

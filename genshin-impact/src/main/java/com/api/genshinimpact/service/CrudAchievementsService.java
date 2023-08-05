@@ -3,6 +3,7 @@ package com.api.genshinimpact.service;
 import com.api.genshinimpact.dto.AchievementsDTO;
 import com.api.genshinimpact.entities.Achievements;
 import com.api.genshinimpact.repository.AchievementsRepository;
+import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -542,12 +543,20 @@ public class CrudAchievementsService {
     };
 
     public AchievementsDTO findById(Integer id){
-        try {
-            Achievements obj = achievementsRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Achievement not found with id: " + id));
+            Achievements obj = achievementsRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Achievement not found with id: " + id));
             return new AchievementsDTO(obj);
-        } catch (NoSuchElementException ex) {
-            return null;
-        }
     }
 
+
+/*
+	public Movie findById(Long id) {
+		return movieRepository.findById(id).orElseThrow(
+				() -> new EntityNotFoundException("Id not found " + id));
+	}
+
+		public Movie findById(Long id) {
+		return movieRepository.findById(id).orElseThrow(
+				() -> new EntityNotFoundException("Id not found " + id));
+	}
+* */
 }

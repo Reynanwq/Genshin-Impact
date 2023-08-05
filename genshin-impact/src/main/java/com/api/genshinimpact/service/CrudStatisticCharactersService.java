@@ -3,6 +3,7 @@ package com.api.genshinimpact.service;
 import com.api.genshinimpact.dto.StatisticCharactersDTO;
 import com.api.genshinimpact.entities.StatisticCharacters;
 import com.api.genshinimpact.repository.StatisticCharactersRepository;
+import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
@@ -730,7 +731,7 @@ public class CrudStatisticCharactersService {
 
     public StatisticCharactersDTO findById(Integer id){
       StatisticCharacters obj = statisticCharactersRepository.findById(id).orElseThrow(
-              () -> new NoSuchElementException("Statistic not found with id: " + id)
+              () -> new EntityNotFoundException("Statistic not found with id: " + id)
       );
       return new StatisticCharactersDTO(obj);
     };

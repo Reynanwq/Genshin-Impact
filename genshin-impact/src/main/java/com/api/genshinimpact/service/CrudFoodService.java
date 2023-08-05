@@ -3,6 +3,7 @@ package com.api.genshinimpact.service;
 import com.api.genshinimpact.dto.FoodDTO;
 import com.api.genshinimpact.entities.Food;
 import com.api.genshinimpact.repository.FoodRepository;
+import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
@@ -186,7 +187,7 @@ public class CrudFoodService {
 
     public FoodDTO findById(Integer id){
         Food obj = foodRepository.findById(id).orElseThrow(
-                () -> new NoSuchElementException("Player not found in database with id: " + id)
+                () -> new EntityNotFoundException("Food not found in database with id: " + id)
         );
         return new FoodDTO(obj);
     }

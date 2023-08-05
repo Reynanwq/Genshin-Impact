@@ -5,6 +5,7 @@ import com.api.genshinimpact.dto.UpdatesDTO;
 import com.api.genshinimpact.entities.Fishing;
 import com.api.genshinimpact.entities.Updates;
 import com.api.genshinimpact.repository.UpdatesRepository;
+import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
@@ -76,7 +77,7 @@ public class CrudUpdatesService {
 
     public UpdatesDTO findById(Integer id){
         Updates obj = updatesRepository.findById(id).orElseThrow(
-                () -> new NoSuchElementException("Updates not found in database with id: " + id)
+                () -> new EntityNotFoundException("Updates not found in database with id: " + id)
         );
         return new UpdatesDTO(obj);
     }

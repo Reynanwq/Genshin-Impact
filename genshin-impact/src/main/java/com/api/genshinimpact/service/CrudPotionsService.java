@@ -3,6 +3,7 @@ package com.api.genshinimpact.service;
 import com.api.genshinimpact.dto.PotionsDTO;
 import com.api.genshinimpact.entities.Potions;
 import com.api.genshinimpact.repository.PotionsRepository;
+import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
@@ -32,7 +33,7 @@ public class CrudPotionsService {
 
     public PotionsDTO findById(Integer id){
         Potions obj = potionsRepository.findById(id).orElseThrow(
-                () -> new NoSuchElementException("Fish not found in database with id: " + id)
+                () -> new EntityNotFoundException("Potions not found in database with id: " + id)
         );
         return new PotionsDTO(obj);
     };

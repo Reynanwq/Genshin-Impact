@@ -3,6 +3,7 @@ package com.api.genshinimpact.service;
 import com.api.genshinimpact.dto.CharactersDTO;
 import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.repository.CharactersRepository;
+import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
@@ -16,7 +17,7 @@ public class CrudCharactersService {
     }
 
     public CharactersDTO findById(Integer id){
-        Characters obj = charactersRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Player not found in database with id: " + id));
+        Characters obj = charactersRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Character not found in database with id: " + id));
         return new CharactersDTO(obj);
     }
     public void insertData(){
