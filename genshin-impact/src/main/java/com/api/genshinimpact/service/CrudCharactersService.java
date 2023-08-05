@@ -1,8 +1,11 @@
 package com.api.genshinimpact.service;
 
+import com.api.genshinimpact.dto.CharactersDTO;
 import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.repository.CharactersRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.NoSuchElementException;
 
 @Service
 public class CrudCharactersService {
@@ -10,6 +13,11 @@ public class CrudCharactersService {
     private CharactersRepository charactersRepository;
     public CrudCharactersService(CharactersRepository charactersRepository){
         this.charactersRepository = charactersRepository;
+    }
+
+    public CharactersDTO findById(Integer id){
+        Characters obj = charactersRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Player not found in database with id: " + id));
+        return new CharactersDTO(obj);
     }
     public void insertData(){
 

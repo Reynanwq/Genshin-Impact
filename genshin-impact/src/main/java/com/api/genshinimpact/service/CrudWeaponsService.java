@@ -1,8 +1,13 @@
 package com.api.genshinimpact.service;
 
+import com.api.genshinimpact.dto.FishingDTO;
+import com.api.genshinimpact.dto.WeaponsDTO;
+import com.api.genshinimpact.entities.Fishing;
 import com.api.genshinimpact.entities.Weapons;
 import com.api.genshinimpact.repository.WeaponsRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.NoSuchElementException;
 
 @Service
 public class CrudWeaponsService {
@@ -113,5 +118,12 @@ public class CrudWeaponsService {
         for(Weapons weapon : weapons){
             System.out.println(weapon);
         }
+    };
+
+    public WeaponsDTO findById(Integer id){
+        Weapons obj = weaponsRepository.findById(id).orElseThrow(
+                () -> new NoSuchElementException("Fish not found in database with id: " + id)
+        );
+        return new WeaponsDTO(obj);
     }
 }

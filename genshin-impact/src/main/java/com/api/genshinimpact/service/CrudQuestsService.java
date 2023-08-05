@@ -1,8 +1,11 @@
 package com.api.genshinimpact.service;
 
+import com.api.genshinimpact.dto.QuestsDTO;
 import com.api.genshinimpact.entities.Quests;
 import com.api.genshinimpact.repository.QuestsRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.NoSuchElementException;
 
 @Service
 public class CrudQuestsService {
@@ -91,4 +94,11 @@ public class CrudQuestsService {
             System.out.println(quest);
         }
     };
+
+    public QuestsDTO findById(Integer id){
+        Quests obj = questsRepository.findById(id).orElseThrow(
+                () -> new NoSuchElementException("Quest not found in database with id" + id)
+        );
+        return new QuestsDTO(obj);
+    }
 }

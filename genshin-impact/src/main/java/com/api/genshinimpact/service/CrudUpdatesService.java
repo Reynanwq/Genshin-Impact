@@ -1,8 +1,14 @@
 package com.api.genshinimpact.service;
 
+import com.api.genshinimpact.dto.FishingDTO;
+import com.api.genshinimpact.dto.UpdatesDTO;
+import com.api.genshinimpact.entities.Fishing;
 import com.api.genshinimpact.entities.Updates;
 import com.api.genshinimpact.repository.UpdatesRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.NoSuchElementException;
+
 @Service
 public class CrudUpdatesService {
     private UpdatesRepository updatesRepository;
@@ -67,4 +73,11 @@ public class CrudUpdatesService {
             System.out.println(update);
         }
     };
+
+    public UpdatesDTO findById(Integer id){
+        Updates obj = updatesRepository.findById(id).orElseThrow(
+                () -> new NoSuchElementException("Updates not found in database with id: " + id)
+        );
+        return new UpdatesDTO(obj);
+    }
 }
