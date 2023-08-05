@@ -2,7 +2,10 @@ package com.api.genshinimpact.dto;
 
 import com.api.genshinimpact.entities.Player;
 
-public class PlayerDTO {
+import java.io.Serializable;
+
+public class PlayerDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
     private int id;
     private String player_name;
 

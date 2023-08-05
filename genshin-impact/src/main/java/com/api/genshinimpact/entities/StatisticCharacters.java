@@ -2,9 +2,12 @@ package com.api.genshinimpact.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "statistic_characters")
-public class StatisticCharacters {
+public class StatisticCharacters implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

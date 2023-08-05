@@ -2,7 +2,11 @@ package com.api.genshinimpact.dto;
 
 import com.api.genshinimpact.entities.Achievements;
 import jakarta.persistence.Column;
-public class AchievementsDTO {
+
+import java.io.Serializable;
+
+public class AchievementsDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Integer id;
     private String achievements_topic;
     private String achievements_name;
