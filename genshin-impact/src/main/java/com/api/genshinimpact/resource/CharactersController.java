@@ -5,10 +5,14 @@ import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.service.CrudAchievementsService;
 import com.api.genshinimpact.service.CrudCharactersService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.actuate.web.exchanges.HttpExchange;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/characters")
@@ -23,5 +27,15 @@ public class CharactersController {
     @GetMapping("/{id}")
     public CharactersDTO findById(@PathVariable Integer id){
         return charactersService.findById(id);
+    }
+
+    @GetMapping(value = "/character/{name}")
+    public ResponseEntity <List<Characters>> getCharacterByName(@PathVariable String name){
+        List<Characters> characters = charactersService.findCharacterByName(name);
+        if (characters.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        } else {
+            return ResponseEntity.ok(characters);
+        }
     }
 }

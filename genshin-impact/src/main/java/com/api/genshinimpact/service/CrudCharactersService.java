@@ -6,6 +6,7 @@ import com.api.genshinimpact.repository.CharactersRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -19,6 +20,14 @@ public class CrudCharactersService {
     public CharactersDTO findById(Integer id){
         Characters obj = charactersRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Character not found in database with id: " + id));
         return new CharactersDTO(obj);
+    }
+
+    public List<Characters> findCharacterByName(String name){
+        List<Characters> characters = charactersRepository.findByName(name);
+        if (characters.isEmpty()){
+            throw new EntityNotFoundException("Character with name '" + name + "' not found");
+        }
+        return characters;
     }
     public void insertData(){
 
