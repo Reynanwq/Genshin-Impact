@@ -1,6 +1,6 @@
 import './App.css';
 import NavigationLinks from './NavigationLinks'; 
-import Aside from './components/aside';
+import Aside from './components/aside/aside';
 import Footer from './components/footer/footer';
 
 function App() {
