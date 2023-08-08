@@ -15,7 +15,6 @@ import StatisticCharacter from './pages/StatisticCharacter.jsx';
 import Updates from './pages/Updates.jsx';
 import Weapons from './pages/Weapons.jsx';
 
-
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -24,16 +23,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route element={<App />}>
         <Route path="/" element={<Home />}/>
-        <Route path="/" element={<Achievements />}/>
-        <Route path="/" element={<Characters />}/>
-        <Route path="/" element={<Fishing />}/>
-        <Route path="/" element={<Food />}/>
-        <Route path="/" element={<Player />}/>
-        <Route path="/" element={<Potions />}/>
-        <Route path="/" element={<Quests />}/>
-        <Route path="/" element={<StatisticCharacter />}/>
-        <Route path="/" element={<Updates />}/>
-        <Route path="/" element={<Weapons />}/>
+        <Route path="/achievements" element={<Achievements />}/>
+        <Route path="/characters" element={<Characters />}/>
+        <Route path="/fishing" element={<Fishing />}/>
+        <Route path="/food" element={<Food />}/>
+        <Route path="/player" element={<Player />}/>
+        <Route path="/potions" element={<Potions />}/>
+        <Route path="/quests" element={<Quests />}/>
+        <Route path="/statisticCharacter" element={<StatisticCharacter />}/>
+        <Route path="/updates" element={<Updates />}/>
+        <Route path="/weapons" element={<Weapons />}/>
      </Route>
     </Routes>
     </BrowserRouter>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Wet+Paint&display=swap');
+
+*{
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #e2e3d9;
+  /*
+  color1: #e2e3d9
+  colo2: #ffffff
+  color3: #a1c1be
+  color4: #59554e
+  color5: #f3f4e5
+  */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background-color: #a1c1be;
+  color: white;
+  padding: 10px;
+  border-bottom: 4px solid #59554e; 
+}
+
+header h1{
+  font-family: 'Rubik Wet Paint', cursive;
+}
+
+section {
+  margin-top: 20px;
+  color: #000;
+  .navigation-links {
+    display: flex;
+    flex-direction: column;
+  }
+  margin-top: 20px;
+}
+
+section h2{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navigation-links {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation-links h3 {
+  margin: 8px 0;
+  cursor: pointer;
+  color: #59554e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none !important;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navigation-links h3:hover {
+  background-color: #f3f4e5;
+  color: #a1c1be;
+}
+
+.navigation-links h3 {
+  /* ... outros estilos ... */
+  text-decoration: none; /* Remova !important */
+}
+
+/* Adicione uma classe específica para remover sublinhado */
+.no-underline {
+  text-decoration: none !important;
+}
+
+.nav_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px; /* Ajuste o tamanho da caixa conforme necessário */
+  height: 140px; /* Ajuste o tamanho da caixa conforme necessário */
+  background-color: #3498db; /* Cor de fundo azul */
+  border-radius: 10px; /* Borda arredondada */
+  margin: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff; /* Cor do texto */
+}
+
+.nav_box:hover {
+  background-color: #2980b9; /* Cor de fundo azul mais escura ao passar o mouse */
+  color: #a1c1be; /* Cor do texto ao passar o mouse */
+} 
