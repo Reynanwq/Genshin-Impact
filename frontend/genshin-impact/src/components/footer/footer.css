@@ -17,11 +17,11 @@
 .social-links a {
   margin-right: 10px;
   margin-bottom: 5px; /* Adiciona espaço entre os links na vertical */
-  color: #3498db;
+  color: #555;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .social-links a:hover {
-  color: #2980b9;
+  color: #000;
 }

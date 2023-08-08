@@ -10,9 +10,15 @@
   height: auto; 
 }
 
+.aside h1 {
+  font-size: 22px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .aside h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .aside ul {
@@ -25,11 +31,12 @@
 }
 
 .aside a {
-  color: #3498db;
   text-decoration: none;
+  color: #555;
   transition: color 0.2s;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .aside a:hover {
-  color: #2980b9;
+  color: #000
 }
