@@ -35,9 +35,22 @@ header h1{
   font-family: 'Rubik Wet Paint', cursive;
 }
 
+.intro-section{
+  margin-top: 20px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 section {
   margin-top: 20px;
   color: #000;
+  display: flex;
+  flex-direction: row;
+  
+
+
   .navigation-links {
     display: flex;
     flex-direction: column;
@@ -52,8 +65,8 @@ section h2{
 .navigation-links {
   display: flex;
   flex-wrap: wrap;  
-  justify-content: space-between;
-  margin-top: 20px;
+  justify-content: space-arround;
+ /* margin-top: 20px;*/
 }
 
 .navigation-links h3 {
@@ -88,11 +101,12 @@ section h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px; /* Ajuste o tamanho da caixa conforme necessário */
-  height: 140px; /* Ajuste o tamanho da caixa conforme necessário */
-  background-color: #3498db; /* Cor de fundo azul */
+  width: 148px; /* Ajuste o tamanho da caixa conforme necessário */
+  height: 148px; /* Ajuste o tamanho da caixa conforme necessário */
+  background-color: #a1c1be; /* Cor de fundo azul */
   border-radius: 10px; /* Borda arredondada */
-  margin: 8px;
+  margin: 20px;
+  padding: 2rem;  
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
@@ -101,6 +115,6 @@ section h2{
 }
 
 .nav_box:hover {
-  background-color: #2980b9; /* Cor de fundo azul mais escura ao passar o mouse */
+  background-color: #f3f4e5; /* Cor de fundo azul mais escura ao passar o mouse */
   color: #a1c1be; /* Cor do texto ao passar o mouse */
 } 
