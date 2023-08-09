@@ -14,7 +14,7 @@ function App() {
         <NavigationLinks /> 
         <Aside/> 
       </section>
-      <div>
+      <div>     
         <Footer/>
       </div>
     </div>
@@ -22,3 +22,4 @@ function App() {
 }
 
 export default App;
+
