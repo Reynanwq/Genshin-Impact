@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-
+import './navigation-links.css';
 const NavigationLinks = () => {
   return (
     <nav className="navigation-links">
-      <Link to={"/achievements"} className="no-underline">
+      <Link to='/achievements' className="no-underline">
         <div className="nav_box">
         <h3>Achievements</h3>
         </div>
       </Link>
-      <Link to={"/characters"} className="no-underline">
+      <Link to="/characters" className="no-underline">
       <div className="nav_box">
       <h3>Character</h3>
       </div>

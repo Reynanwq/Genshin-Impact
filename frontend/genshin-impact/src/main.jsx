@@ -14,13 +14,13 @@ import StatisticCharacter from './pages//StatisticCharacter/StatisticCharacter.j
 import Updates from './pages/Updates/Updates.jsx';
 import Weapons from './pages/Weapons/Weapons.jsx';
 
-import './index.css'
+import './App.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route element={<App />}>
+        <Route path='/' element={<App />}>
         <Route path="/achievements" element={<Achievements />}/>
         <Route path="/characters" element={<Characters />}/>
         <Route path="/fishing" element={<Fishing />}/>
@@ -31,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/statisticCharacter" element={<StatisticCharacter />}/>
         <Route path="/updates" element={<Updates />}/>
         <Route path="/weapons" element={<Weapons />}/>
+        <Route path='*' element={Error}></Route>
      </Route>
     </Routes>
     </BrowserRouter>

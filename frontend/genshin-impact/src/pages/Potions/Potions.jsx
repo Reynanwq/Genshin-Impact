@@ -1,5 +1,7 @@
-const Potions = () => {
-  return <div>Potions</div>;
-};
+function Potions(){
+  return(
+     <div>Potions</div>
+  )
+}
 
 export default Potions;

@@ -1,56 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Wet+Paint&display=swap');
 
-*{
-  font-family: Helvetica;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  background-color: #e2e3d9;
-  /*
-  color1: #e2e3d9
-  colo2: #ffffff
-  color3: #a1c1be
-  color4: #59554e
-  color5: #f3f4e5
-  */
-}
-
-.App {
-  text-align: center;
-  padding: 20px;
-}
-
-header {
-  background-color: #a1c1be;
-  color: white;
-  padding: 10px;
-  border-bottom: 4px solid #59554e; 
-}
-
-header h1{
-  font-family: 'Rubik Wet Paint', cursive;
-}
-
-.intro-section{
-  margin-top: 20px;
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
 section {
   margin-top: 20px;
   color: #000;
   display: flex;
   flex-direction: row;
   
-
-
   .navigation-links {
     display: flex;
     flex-direction: column;
@@ -68,6 +24,7 @@ section h2{
   justify-content: space-arround;
  /* margin-top: 20px;*/
 }
+
 
 .navigation-links h3 {
   margin: 8px 0;
