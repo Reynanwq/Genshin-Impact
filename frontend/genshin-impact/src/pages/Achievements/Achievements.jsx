@@ -1,8 +1,9 @@
-import Some from "../../components/achievements_components/some";
+import Achievements_header from "../../components/achievements_components/achievements-header";
+
 function Achievements() {
   return (
     <div>
-      <Some />
+      <Achievements_header />
     </div>
   );
 }
