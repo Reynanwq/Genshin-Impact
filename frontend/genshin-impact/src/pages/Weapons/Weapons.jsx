@@ -1,9 +1,11 @@
-const Weapons = () => {
+import Weapons_header from "../../components/weapons_components/weapons-header";
+
+function Weapons(){
   return(
-     <div className="Weapons">
-    <h1>Weapons</h1>
-  </div>
+     <div>
+      <Weapons_header />  
+    </div>
   );
-};
+}
 
 export default Weapons;
