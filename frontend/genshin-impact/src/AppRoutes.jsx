@@ -15,7 +15,7 @@ function AppRoutes(){
   return (
     <BrowserRouter>
       <Routes>
-              <Route path='/' element={<App />}>
+              <Route path='/' element={<App />}/>
               <Route path="/achievements" element={<Achievements />}/>
               <Route path="/characters" element={<Characters />}/>
               <Route path="/fishing" element={<Fishing />}/>
@@ -27,7 +27,6 @@ function AppRoutes(){
               <Route path="/updates" element={<Updates />}/>
               <Route path="/weapons" element={<Weapons />}/>
               <Route path='*' element={Error}></Route>
-              </Route>
       </Routes>   
     </BrowserRouter>
   )
