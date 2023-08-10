@@ -1,5 +1,5 @@
 import './achievements-main.css';
-import imgTest from '../../assets/img-test.png';
+import imgTest from '../../assets/achievements/genshim-photo.jpeg';
 
 function achievement_main(){
   return(
