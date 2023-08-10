@@ -9,11 +9,12 @@ function Weapons_main(){
         <h2>NAME: </h2>
         <h2>TYPE: </h2>
         <h2>DESCRIPTION: </h2>
-        <h2>RELEASE DATE:</h2>
-        <h2>GENDER: </h2>
-        <h2>SKILLS:</h2>
-        <h2>PASSIVE-TALENT:</h2>
-        <h2>CONSTELATIONS:</h2>
+        <h2>BASIC ATACK:</h2>
+        <h2>BASIC-DEFENSE </h2>
+        <h2>CRITICK DAMAGA</h2>
+        <h2>LEVEL:</h2>
+        <h2>ASCENSION:</h2>
+        <h2>AMOUNT STARS:</h2>
       </div>
     </div>
   );

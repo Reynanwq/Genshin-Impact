@@ -7,13 +7,11 @@ function Quests_main(){
       <div className="card-achievement">
       <img src={imgTest} alt="IMG TEST" />
         <h2>NAME: </h2>
-        <h2>TYPE: </h2>
         <h2>DESCRIPTION: </h2>
-        <h2>RELEASE DATE:</h2>
-        <h2>GENDER: </h2>
-        <h2>SKILLS:</h2>
-        <h2>PASSIVE-TALENT:</h2>
-        <h2>CONSTELATIONS:</h2>
+        <h2>REWARD:</h2>
+        <h2>CHAPTER: </h2>
+        <h2>ACTS:</h2>
+        <h2>RANK:</h2>
       </div>
     </div>
   );

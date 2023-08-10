@@ -7,13 +7,12 @@ function Statistic_main(){
       <div className="card-achievement">
       <img src={imgTest} alt="IMG TEST" />
         <h2>NAME: </h2>
-        <h2>TYPE: </h2>
-        <h2>DESCRIPTION: </h2>
-        <h2>RELEASE DATE:</h2>
-        <h2>GENDER: </h2>
-        <h2>SKILLS:</h2>
-        <h2>PASSIVE-TALENT:</h2>
-        <h2>CONSTELATIONS:</h2>
+        <h2>LEVEL: </h2>
+        <h2>BASIC LIFE:</h2>
+        <h2>BASIC ATTACK: </h2>
+        <h2>BASIF DEFENSE:</h2>
+        <h2>PASSIVE TALENT:</h2>
+        <h2>DAMAGE BONUS::</h2>
       </div>
     </div>
   );
