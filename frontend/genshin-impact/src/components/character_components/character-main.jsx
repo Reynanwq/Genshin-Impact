@@ -1,5 +1,5 @@
 import '../achievements_components/achievements-main.css';
-import imgTest from '../../assets/img-test.png';
+import imgTest from '../../assets/characters/albedo.webp';
 
 function character_main(){
   return(
