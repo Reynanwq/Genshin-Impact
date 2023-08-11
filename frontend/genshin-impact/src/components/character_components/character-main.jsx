@@ -13,7 +13,7 @@ function character_main(){
         setPosts(response.data);
       })
       .catch(() => {
-        console.log("deu errado");
+        console.log("error in axios request");
       });
   }, []);
 
