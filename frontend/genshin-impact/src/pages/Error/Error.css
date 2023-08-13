@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Wet+Paint&display=swap');
+
+.error_page{
+  background-image: url('../../assets/error/error-background.png');
+  background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+  background-repeat: no-repeat;
+  background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+  height: 100vh; 
+ 
+}
+
+.error2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px;
+  background-color: #333333;
+  color: #ffffff;   
+}
+
+.error2 h1{
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 100px;
+}

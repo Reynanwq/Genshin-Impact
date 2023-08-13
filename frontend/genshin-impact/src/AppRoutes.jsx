@@ -10,7 +10,7 @@ import Quests from './pages/Quests/Quests.jsx';
 import StatisticCharacter from './pages//StatisticCharacter/StatisticCharacter.jsx';
 import Updates from './pages/Updates/Updates.jsx';
 import Weapons from './pages/Weapons/Weapons.jsx';
-
+import Error from './pages/Error/Error.jsx';
 function AppRoutes(){
   return (
     <BrowserRouter>
@@ -26,7 +26,7 @@ function AppRoutes(){
               <Route path="/statisticCharacter" element={<StatisticCharacter />}/>
               <Route path="/updates" element={<Updates />}/>
               <Route path="/weapons" element={<Weapons />}/>
-              <Route path='*' element={Error}></Route>
+              <Route path='*' element={<Error />} /> 
       </Routes>   
     </BrowserRouter>
   )
