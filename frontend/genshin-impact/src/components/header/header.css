@@ -11,3 +11,8 @@ header {
 header h1{
   font-family: 'Rubik Wet Paint', cursive;
 }
+
+.header-principal h1{
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 40px;
+}

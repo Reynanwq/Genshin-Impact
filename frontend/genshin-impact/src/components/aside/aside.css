@@ -11,12 +11,12 @@
 }
 
 .aside h1 {
-  font-size: 22px;
+  font-size: 32px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .aside h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 10px;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -35,6 +35,7 @@
   color: #555;
   transition: color 0.2s;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
 }
 
 .aside a:hover {

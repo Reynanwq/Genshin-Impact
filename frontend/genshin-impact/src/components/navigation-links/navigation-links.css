@@ -37,6 +37,7 @@ section h2{
   transition: background-color 0.2s, color 0.2s;
   text-decoration: none !important;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 27px;
 }
 
 .navigation-links h3:hover {
@@ -58,11 +59,12 @@ section h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 148px; /* Ajuste o tamanho da caixa conforme necessário */
-  height: 148px; /* Ajuste o tamanho da caixa conforme necessário */
+  width: 168px; /* Ajuste o tamanho da caixa conforme necessário */
+  height: 168px; /* Ajuste o tamanho da caixa conforme necessário */
   background-color: #a1c1be; /* Cor de fundo azul */
   border-radius: 10px; /* Borda arredondada */
   margin: 20px;
+  margin-bottom: 5px;
   padding: 2rem;  
   cursor: pointer;
   text-decoration: none;

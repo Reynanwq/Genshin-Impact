@@ -8,3 +8,7 @@
   flex-direction: column;
   font-family: 'Josefin Sans', sans-serif;
 }
+
+.intro-section h2{
+  font-size: 30px;
+}
