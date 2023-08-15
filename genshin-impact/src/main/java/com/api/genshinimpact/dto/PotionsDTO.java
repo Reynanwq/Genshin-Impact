@@ -16,13 +16,14 @@ public class PotionsDTO implements Serializable {
     private String potion_name;
     private Integer rarity;
     private String effect;
-
+    private String url;
     PotionsDTO(){};
-    PotionsDTO(Integer id, String potion_name, Integer rarity, String effect) {
+    PotionsDTO(Integer id, String potion_name, Integer rarity, String effect, String url) {
         this.id = id;
         this.potion_name = potion_name;
         this.rarity = rarity;
         this.effect = effect;
+        this.url = url;
     }
 
     public PotionsDTO(Potions potions){
@@ -30,6 +31,7 @@ public class PotionsDTO implements Serializable {
         this.potion_name = potions.getPotion_name();
         this.rarity = potions.getRarity();
         this.effect = potions.getEffect();
+        this.url = potions.getUrl();
     }
 
     public Integer getId() {
@@ -62,5 +64,13 @@ public class PotionsDTO implements Serializable {
 
     public void setEffect(String effect) {
         this.effect = effect;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

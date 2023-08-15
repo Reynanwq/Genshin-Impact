@@ -17,15 +17,16 @@ public class FoodDTO implements Serializable {
     private String food_description;
     private Integer rarity;
     private String food_type;
-
+    private String url;
     public FoodDTO(){};
 
-    public FoodDTO(Integer id, String food_name, String food_description, Integer rarity, String food_type) {
+    public FoodDTO(Integer id, String food_name, String food_description, Integer rarity, String food_type, String url) {
         this.id = id;
         this.food_name = food_name;
         this.food_description = food_description;
         this.rarity = rarity;
         this.food_type = food_type;
+        this.url = url;
     }
 
     public FoodDTO(Food food){
@@ -34,6 +35,7 @@ public class FoodDTO implements Serializable {
         this.food_description = food.getFood_description();
         this.rarity = food.getRarity();
         this.food_type = food.getFood_type();
+        this.url = food.getUrl();
     }
 
     public Integer getId() {
@@ -74,5 +76,13 @@ public class FoodDTO implements Serializable {
 
     public void setFood_type(String food_type) {
         this.food_type = food_type;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

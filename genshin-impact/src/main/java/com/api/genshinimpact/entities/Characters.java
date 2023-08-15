@@ -29,10 +29,13 @@ public class Characters implements Serializable {
     private String passive_talent;
     @Column(nullable = false)
     private String constellations;
+    @Column(nullable = false)
+    private String url;
+
 
     @Deprecated
     public Characters(){};
-    public Characters(Integer id, String name, String type, Integer level, String description, String release_date, String gender, String skills, String passive_talent, String constellations) {
+    public Characters(Integer id, String name, String type, Integer level, String description, String release_date, String gender, String skills, String passive_talent, String constellations, String url) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -43,6 +46,7 @@ public class Characters implements Serializable {
         this.skills = skills;
         this.passive_talent = passive_talent;
         this.constellations = constellations;
+        this.url = url;
     }
 
     public Integer getId() {
@@ -125,6 +129,14 @@ public class Characters implements Serializable {
         this.constellations = constellations;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     @Override
     public String toString() {
         return "Characters{" +
@@ -138,6 +150,7 @@ public class Characters implements Serializable {
                 ", skills='" + skills + '\'' +
                 ", passive_talent='" + passive_talent + '\'' +
                 ", constellations='" + constellations + '\'' +
+                ", url'" + url + '\'' +
                 '}';
     }
 }

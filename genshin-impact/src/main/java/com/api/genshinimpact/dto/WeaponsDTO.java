@@ -22,10 +22,10 @@ public class WeaponsDTO implements Serializable {
     private Integer level;
     private Integer ascension;
     private Integer amounts_stars;
-
+    private String url;
     public WeaponsDTO(){};
 
-    public WeaponsDTO(Integer id, String achievements_name, String type, String achievements_description, Integer basic_attack, Integer basic_defense, Integer crit_damage, Integer level, Integer ascension, Integer amounts_stars) {
+    public WeaponsDTO(Integer id, String achievements_name, String type, String achievements_description, Integer basic_attack, Integer basic_defense, Integer crit_damage, Integer level, Integer ascension, Integer amounts_stars, String url) {
         this.id = id;
         this.achievements_name = achievements_name;
         this.type = type;
@@ -36,6 +36,7 @@ public class WeaponsDTO implements Serializable {
         this.level = level;
         this.ascension = ascension;
         this.amounts_stars = amounts_stars;
+        this.url = url;
     }
     public WeaponsDTO(Weapons weapons){
         this.id = weapons.getId();
@@ -49,6 +50,7 @@ public class WeaponsDTO implements Serializable {
         this.level = weapons.getLevel();
         this.ascension = weapons.getAscension();
         this.amounts_stars = weapons.getAmounts_stars();
+        this.url = weapons.getUrl();
     }
 
     public Integer getId() {
@@ -129,5 +131,13 @@ public class WeaponsDTO implements Serializable {
 
     public void setAmounts_stars(Integer amounts_stars) {
         this.amounts_stars = amounts_stars;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

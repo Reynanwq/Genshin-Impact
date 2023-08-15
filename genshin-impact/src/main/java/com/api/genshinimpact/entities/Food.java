@@ -18,16 +18,19 @@ public class Food implements Serializable {
     private Integer rarity;
     @Column(nullable = false)
     private String food_type;
+    @Column(nullable = false)
+    private String url;
 
     @Deprecated
     public Food(){};
 
-    public Food(Integer id, String food_name, String food_description, Integer rarity, String food_type) {
+    public Food(Integer id, String food_name, String food_description, Integer rarity, String food_type, String url) {
         this.id = id;
         this.food_name = food_name;
         this.food_description = food_description;
         this.rarity = rarity;
         this.food_type = food_type;
+        this.url = url;
     }
 
     public Integer getId() {
@@ -70,6 +73,14 @@ public class Food implements Serializable {
         this.food_type = food_type;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     @Override
     public String toString() {
         return "Food{" +
@@ -78,6 +89,7 @@ public class Food implements Serializable {
                 ", food_description='" + food_description + '\'' +
                 ", rarity=" + rarity +
                 ", food_type='" + food_type + '\'' +
+                ", url='" + url + '\'' +
                 '}';
     }
 }

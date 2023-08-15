@@ -20,9 +20,9 @@ public class UpdatesDTO implements Serializable {
     private String path_characters;
     private String path_time;
     private String path_characters_limited;
-
+    private String url;
     public UpdatesDTO(){};
-    public UpdatesDTO(Integer id, String path_version, String path_name, String path_status, String path_weapons, String path_characters, String path_time, String path_characters_limited) {
+    public UpdatesDTO(Integer id, String path_version, String path_name, String path_status, String path_weapons, String path_characters, String path_time, String path_characters_limited, String url) {
         this.id = id;
         this.path_version = path_version;
         this.path_name = path_name;
@@ -31,6 +31,7 @@ public class UpdatesDTO implements Serializable {
         this.path_characters = path_characters;
         this.path_time = path_time;
         this.path_characters_limited = path_characters_limited;
+        this.url = url;
     }
 
     public UpdatesDTO(Updates updates){
@@ -42,6 +43,7 @@ public class UpdatesDTO implements Serializable {
         this.path_characters = updates.getPath_characters();
         this.path_time = updates.getPath_time();
         this.path_characters_limited = updates.getPath_characters_limited();
+        this.url = updates.getUrl();
     }
 
     public Integer getId() {
@@ -106,5 +108,13 @@ public class UpdatesDTO implements Serializable {
 
     public void setPath_characters_limited(String path_characters_limited) {
         this.path_characters_limited = path_characters_limited;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

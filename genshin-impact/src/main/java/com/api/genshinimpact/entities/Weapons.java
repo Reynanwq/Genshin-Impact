@@ -28,10 +28,12 @@ public class Weapons implements Serializable {
     private Integer ascension;
     @Column(nullable = false)
     private Integer amounts_stars;
+    @Column(nullable = false)
+    private String url;
 
     @Deprecated
     public Weapons(){ };
-    public Weapons(Integer id, String achievements_name, String type, String achievements_description, Integer basic_attack, Integer basic_defense, Integer crit_damage, Integer level, Integer ascension, Integer amounts_stars) {
+    public Weapons(Integer id, String achievements_name, String type, String achievements_description, Integer basic_attack, Integer basic_defense, Integer crit_damage, Integer level, Integer ascension, Integer amounts_stars, String url) {
         this.id = id;
         this.achievements_name = achievements_name;
         this.type = type;
@@ -42,6 +44,7 @@ public class Weapons implements Serializable {
         this.level = level;
         this.ascension = ascension;
         this.amounts_stars = amounts_stars;
+        this.url = url;
     }
 
     public Integer getId() {
@@ -124,6 +127,14 @@ public class Weapons implements Serializable {
         this.amounts_stars = amounts_stars;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     @Override
     public String toString() {
         return "Weapons{" +
@@ -137,6 +148,7 @@ public class Weapons implements Serializable {
                 ", level=" + level +
                 ", ascension=" + ascension +
                 ", amounts_stars=" + amounts_stars +
+                ", url=" + url +
                 '}';
     }
 }

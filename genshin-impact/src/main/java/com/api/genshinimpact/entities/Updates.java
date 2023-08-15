@@ -25,10 +25,12 @@ public class Updates implements Serializable {
     private String path_time;
     @Column(nullable = false)
     private String path_characters_limited;
+    @Column(nullable = false)
+    private String url;
 
     @Deprecated
     public Updates(){ };
-    public Updates(Integer id, String path_version, String path_name, String path_status, String path_weapons, String path_characters, String path_time, String path_characters_limited) {
+    public Updates(Integer id, String path_version, String path_name, String path_status, String path_weapons, String path_characters, String path_time, String path_characters_limited, String url) {
         this.id = id;
         this.path_version = path_version;
         this.path_name = path_name;
@@ -37,6 +39,7 @@ public class Updates implements Serializable {
         this.path_characters = path_characters;
         this.path_time = path_time;
         this.path_characters_limited = path_characters_limited;
+        this.url = url;
     }
 
     public Integer getId() {
@@ -103,6 +106,14 @@ public class Updates implements Serializable {
         this.path_characters_limited = path_characters_limited;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     @Override
     public String toString() {
         return "Updates{" +
@@ -114,6 +125,7 @@ public class Updates implements Serializable {
                 ", path_characters='" + path_characters + '\'' +
                 ", path_time='" + path_time + '\'' +
                 ", path_characters_limited='" + path_characters_limited + '\'' +
+                ", url='" + url + '\'' +
                 '}';
     }
 }

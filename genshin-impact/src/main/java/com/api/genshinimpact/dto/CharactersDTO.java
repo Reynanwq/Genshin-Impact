@@ -22,10 +22,10 @@ public class CharactersDTO implements Serializable {
     private String skills;
     private String passive_talent;
     private String constellations;
-
+    private String url;
     public CharactersDTO(){}
 
-    public CharactersDTO(Integer id, String name, String type, Integer level, String description, String release_date, String gender, String skills, String passive_talent, String constellations){
+    public CharactersDTO(Integer id, String name, String type, Integer level, String description, String release_date, String gender, String skills, String passive_talent, String constellations, String url){
         super();
         this.id = id;
         this.name = name;
@@ -37,6 +37,7 @@ public class CharactersDTO implements Serializable {
         this.skills = skills;
         this.passive_talent = passive_talent;
         this.constellations = constellations;
+        this.url = url;
     }
     public CharactersDTO(Characters characters){
         this.id = characters.getId();
@@ -49,6 +50,7 @@ public class CharactersDTO implements Serializable {
         this.skills = characters.getSkills();
         this.passive_talent = characters.getPassive_talent();
         this.constellations = characters.getConstellations();
+        this.url =  characters.getUrl();
     }
 
     public Integer getId() {
@@ -129,5 +131,13 @@ public class CharactersDTO implements Serializable {
 
     public void setConstellations(String constellations) {
         this.constellations = constellations;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
