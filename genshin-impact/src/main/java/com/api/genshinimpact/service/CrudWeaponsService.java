@@ -17,9 +17,11 @@ public class CrudWeaponsService {
         this.weaponsRepository = weaponsRepository;
     }
     public void insertData(){
-        Weapons agitação_trovejante = new Weapons(1, "Agitação Trovejante", "Arco", "Um arco longo que foi dado a alguém pela Shogun. Ele emite raios que nunca se apagam.", 46, 0, 14, 1, 0, 5, "");
-        Weapons aqua_simulacra = new Weapons(2, "Aqua Simulacra", "Arco", "A cor desse arco longo muda imprevisivelmente. Sob a luz, possui um brilho azulado como água.", 44, 0, 19, 1, 0, 5, "");
-       /* Weapons weapons0 = new Weapons(3, "", "", "", 0, 0, 0, 0, 0, 0, "");
+        //about the PATH, is "../../assets/weapons/" for everybody that stay here
+
+        Weapons agitação_trovejante = new Weapons(1, "Agitação Trovejante", "Arco", "Um arco longo que foi dado a alguém pela Shogun. Ele emite raios que nunca se apagam.", 46, 0, 14, 1, 0, 5, "../../assets/weapons/thundering_pulse.webp");
+        Weapons aqua_simulacra = new Weapons(2, "Aqua Simulacra", "Arco", "A cor desse arco longo muda imprevisivelmente. Sob a luz, possui um brilho azulado como água.", 44, 0, 19, 1, 0, 5, "../../assets/weapons/aqua_simulacra.webp");
+       /* Weapons weapons0 = new Weapons(3, "", "", "", 0, 0, 0, 0, 0, 0, "../../assets/updates/");
         Weapons weapons0 = new Weapons(4, "", "", "", 0, 0, 0, 0, 0, 0, "");
         Weapons weapons0 = new Weapons(5, "", "", "", 0, 0, 0, 0, 0, 0, "");
         Weapons weapons0 = new Weapons(6, "", "", "", 0, 0, 0, 0, 0, 0, "");
