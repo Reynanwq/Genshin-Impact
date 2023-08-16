@@ -21,7 +21,7 @@ function character_main(){
     <div>
       {posts.map((post, key) => (
         <div key={key} className="card-achievement">
-          <img src={imgTest} alt="IMG TEST" />
+          <img src={post.url} alt="IMG FROM CHARACTER" />
           <h2>NAME: {post.name}</h2>
           <h2>TYPE: {post.type}</h2>
           <h2>DESCRIPTION: {post.description}</h2>

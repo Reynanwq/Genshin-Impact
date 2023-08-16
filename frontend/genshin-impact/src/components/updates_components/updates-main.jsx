@@ -20,7 +20,7 @@ function Updates_main(){
     <div>
        {posts.map((post, key) => (
         <div key={key} className="card-achievement">
-        <img src={imgTest} alt="IMG TEST" />
+        <img src={post.url} alt="IMG TEST" />
           <h2>PATH-VERSION: {post. path_version}</h2>
           <h2>NAME: {post.path_name}</h2>
           <h2>STATUS: {post.path_status}</h2>

@@ -20,7 +20,7 @@ function Weapons_main(){
     <div>
       {posts.map((post, key) => (
       <div key={key} className="card-achievement">
-        <img src={imgTest} alt="IMG TEST" />
+        <img src={post.url} alt="IMG TEST" />
           <h2>NAME: </h2>
           <h2>TYPE: </h2>
           <h2>DESCRIPTION: </h2>

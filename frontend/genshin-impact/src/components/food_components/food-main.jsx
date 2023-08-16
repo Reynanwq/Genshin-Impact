@@ -20,7 +20,7 @@ function Food_main(){
     <div>
       {posts.map((post, key) => (
         <div key={key} className="card-achievement">
-          <img src={imgTest} alt="IMG TEST" />
+          <img src={post.url} alt="IMG TEST" />
             <h2>NAME: {post.food_name}</h2>
             <h2>DESCRIPTION: {post.food_description}</h2>
             <h2>RARITY: {post.rarity}</h2>

@@ -19,7 +19,7 @@ function Potions_main(){
     <div>
       {posts.map((post, key) => (
     <div key={key} className="card-achievement">
-      <img src={imgTest} alt="IMG TEST" />
+      <img src={post.url} alt="IMG TEST" />
         <h2>NAME: {post.potion_name}</h2>
         <h2>RARITY: {post.rarity}</h2>
         <h2>EFFECT: {post.effect}</h2>
