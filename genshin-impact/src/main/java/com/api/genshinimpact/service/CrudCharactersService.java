@@ -17,6 +17,10 @@ public class CrudCharactersService {
         this.charactersRepository = charactersRepository;
     }
 
+    public List<Characters>findALL(){
+        return (List<Characters>) charactersRepository.findAll();
+    }
+
     public CharactersDTO findById(Integer id){
         Characters obj = charactersRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Character not found in database with id: " + id));
         return new CharactersDTO(obj);

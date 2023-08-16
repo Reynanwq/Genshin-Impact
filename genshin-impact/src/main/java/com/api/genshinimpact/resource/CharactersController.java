@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(value = "/characters")
@@ -37,5 +38,12 @@ public class CharactersController {
         } else {
             return ResponseEntity.ok(characters);
         }
+    }
+
+    @GetMapping
+    public ResponseEntity<List<CharactersDTO>> findAll(){
+        List<Characters> list = charactersService.findALL();
+        List<CharactersDTO> listDto = list.stream().map(x -> new CharactersDTO(x)).collect(Collectors.toList());
+        return ResponseEntity.ok().body(listDto);
     }
 }

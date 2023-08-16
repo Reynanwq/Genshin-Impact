@@ -108,7 +108,7 @@ public class CrudFoodService {
         Food food37 = new Food(86, "Tofu de Oncidium", "Diminui o consumo de Stamina ao correr e planar de todos os membros da Equipe em 20% por 900s. Durante o modo multijogador, este efeito tem efeito apenas em si mesmo.", 1, "Normal", "../../assets/food/");
         Food food38 = new Food(87, "Onigiri", "Restaura 85 de Stamina.", 1, "Normal", "");
         Food food39 = new Food(88, "Pudim de Padisarah", "Restaura 20% da Vida Máxima do personagem selecionado e regenera 390 de Vida a cada 5s por 30s.", 1, "Normal", "../../assets/food/");
-        Food food40 = new Food(89, "Panipuri", "Diminui o consumo de Stamina ao correr e escalar de todos os membros da Equipe em 20% por 900s. Durante o modo multijogador, este efeito tem efeito apenas em si mesmo.", 1, "Normal", "../../assets/food/";
+        Food food40 = new Food(89, "Panipuri", "Diminui o consumo de Stamina ao correr e escalar de todos os membros da Equipe em 20% por 900s. Durante o modo multijogador, este efeito tem efeito apenas em si mesmo.", 1, "Normal", "../../assets/food/");
         Food food41 = new Food(90, "\"Empilhar\"", "Revive um personagem e restaura 400 de Vida.", 1, "Normal", "../../assets/food/");
         Food food42 = new Food(91, "Pão Pita", "Aumenta a Taxa CRIT de todos os membros da Equipe em 15% por 300s. No modo multijogador, terá efeito em si mesmo.", 1, "Normal", "../../assets/food/");
         Food food43 = new Food(92, "Navio de Batata", "Restaura 32% da Vida Máxima e 1250 de Vida para o personagem selecionado.", 1, "Normal", "../../assets/food/");
