@@ -1,11 +1,13 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.QuestsDTO;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.entities.Quests;
 import com.api.genshinimpact.repository.QuestsRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -95,6 +97,10 @@ public class CrudQuestsService {
             System.out.println(quest);
         }
     };
+
+    public List<Quests> findALL(){
+        return (List<Quests>) questsRepository.findAll();
+    }
 
     public QuestsDTO findById(Integer id){
         Quests obj = questsRepository.findById(id).orElseThrow(

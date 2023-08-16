@@ -2,11 +2,13 @@ package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.AchievementsDTO;
 import com.api.genshinimpact.entities.Achievements;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.repository.AchievementsRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -542,6 +544,9 @@ public class CrudAchievementsService {
         }
     };
 
+    public List<Achievements> findALL(){
+        return (List<Achievements>) achievementsRepository.findAll();
+    }
     public AchievementsDTO findById(Integer id){
             Achievements obj = achievementsRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Achievement not found with id: " + id));
             return new AchievementsDTO(obj);

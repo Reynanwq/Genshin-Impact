@@ -1,11 +1,13 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.FoodDTO;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.entities.Food;
 import com.api.genshinimpact.repository.FoodRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -186,6 +188,10 @@ public class CrudFoodService {
             System.out.println(food);
         }
     };
+
+    public List<Food> findALL(){
+        return (List<Food>) foodRepository.findAll();
+    }
 
     public FoodDTO findById(Integer id){
         Food obj = foodRepository.findById(id).orElseThrow(

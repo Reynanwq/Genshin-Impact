@@ -1,11 +1,13 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.FishingDTO;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.entities.Fishing;
 import com.api.genshinimpact.repository.FishingRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -106,6 +108,9 @@ public class CrudFishingService {
             System.out.println(fishing);
         }
     };
+    public List<Fishing> findALL(){
+        return (List<Fishing>) fishingRepository.findAll();
+    }
 
     public FishingDTO findById(Integer id){
         Fishing obj = fishingRepository.findById(id).orElseThrow(

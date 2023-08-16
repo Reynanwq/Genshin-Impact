@@ -2,12 +2,14 @@ package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.FishingDTO;
 import com.api.genshinimpact.dto.UpdatesDTO;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.entities.Fishing;
 import com.api.genshinimpact.entities.Updates;
 import com.api.genshinimpact.repository.UpdatesRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -76,6 +78,10 @@ public class CrudUpdatesService {
             System.out.println(update);
         }
     };
+
+    public List<Updates> findALL(){
+        return (List<Updates>) updatesRepository.findAll();
+    }
 
     public UpdatesDTO findById(Integer id){
         Updates obj = updatesRepository.findById(id).orElseThrow(

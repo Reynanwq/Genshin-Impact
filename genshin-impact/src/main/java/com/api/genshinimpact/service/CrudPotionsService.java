@@ -1,11 +1,13 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.PotionsDTO;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.entities.Potions;
 import com.api.genshinimpact.repository.PotionsRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -32,6 +34,10 @@ public class CrudPotionsService {
             System.out.println(potion);
         }
     };
+
+    public List<Potions> findALL(){
+        return (List<Potions>) potionsRepository.findAll();
+    }
 
     public PotionsDTO findById(Integer id){
         Potions obj = potionsRepository.findById(id).orElseThrow(

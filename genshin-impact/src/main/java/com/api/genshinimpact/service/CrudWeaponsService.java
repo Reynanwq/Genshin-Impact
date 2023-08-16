@@ -2,12 +2,14 @@ package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.FishingDTO;
 import com.api.genshinimpact.dto.WeaponsDTO;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.entities.Fishing;
 import com.api.genshinimpact.entities.Weapons;
 import com.api.genshinimpact.repository.WeaponsRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -122,6 +124,10 @@ public class CrudWeaponsService {
             System.out.println(weapon);
         }
     };
+
+    public List<Weapons> findALL(){
+        return (List<Weapons>) weaponsRepository.findAll();
+    }
 
     public WeaponsDTO findById(Integer id){
         Weapons obj = weaponsRepository.findById(id).orElseThrow(

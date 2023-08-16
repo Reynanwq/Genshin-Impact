@@ -46,8 +46,6 @@ public class GenshinImpactApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GenshinImpactApplication.class, args);}
-
-
 		@Override
 		public void run (String...args) throws Exception {
 			this.achievementsService.insertData(); //INSERT DATA ON DATABASE -> ACHIEVEMENTS
@@ -62,4 +60,3 @@ public class GenshinImpactApplication implements CommandLineRunner {
 			this.weaponsService.insertData(); //INSERT DATA ON DATABASE -> WEAPONS
 		}
 }
-

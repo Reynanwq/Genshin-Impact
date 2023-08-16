@@ -1,12 +1,14 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.PlayerDTO;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.entities.Player;
 import com.api.genshinimpact.repository.PlayerRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -30,6 +32,10 @@ public class CrudPlayerService {
             System.out.println(player);
         }
     };
+
+    public List<Player> findALL(){
+        return (List<Player>) playerRepository.findAll();
+    }
 
     public PlayerDTO findById(Integer id){
             Player obj = playerRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Player not found in database with id: " + id));

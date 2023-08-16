@@ -20,7 +20,6 @@ import java.util.stream.Collectors;
 public class CharactersController {
     @Autowired
     private CrudCharactersService charactersService;
-
     public CharactersController(CrudCharactersService charactersService){
         this.charactersService = charactersService;
     }

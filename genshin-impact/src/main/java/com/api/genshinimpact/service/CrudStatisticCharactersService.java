@@ -1,11 +1,14 @@
 package com.api.genshinimpact.service;
 
 import com.api.genshinimpact.dto.StatisticCharactersDTO;
+import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.entities.StatisticCharacters;
 import com.api.genshinimpact.repository.StatisticCharactersRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
+import io.micrometer.core.instrument.Statistic;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
@@ -728,6 +731,8 @@ public class CrudStatisticCharactersService {
             System.out.println(statisticCharacter);
         }
     };
+
+    public List<StatisticCharacters> findALL(){ return (List<StatisticCharacters>) statisticCharactersRepository.findAll();  }
 
     public StatisticCharactersDTO findById(Integer id){
       StatisticCharacters obj = statisticCharactersRepository.findById(id).orElseThrow(

@@ -16,7 +16,6 @@ public class CrudCharactersService {
     public CrudCharactersService(CharactersRepository charactersRepository){
         this.charactersRepository = charactersRepository;
     }
-
     public List<Characters>findALL(){
         return (List<Characters>) charactersRepository.findAll();
     }
