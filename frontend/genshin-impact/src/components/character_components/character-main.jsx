@@ -1,5 +1,4 @@
 import '../achievements_components/achievements-main.css';
-import imgTest from '../../assets/characters/albedo.webp';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 

@@ -2,7 +2,6 @@ import '../achievements_components/achievements-main.css';
 import imgTest from '../../assets/img-test.png';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
 function Updates_main(){
   const[posts, setPosts] = useState([]);
 
@@ -21,7 +20,7 @@ function Updates_main(){
        {posts.map((post, key) => (
         <div key={key} className="card-achievement">
         <img src={post.url} alt="IMG TEST" />
-          <h2>PATH-VERSION: {post. path_version}</h2>
+          <h2>PATH-VERSION: {post.path_version}</h2>
           <h2>NAME: {post.path_name}</h2>
           <h2>STATUS: {post.path_status}</h2>
           <h2>WEAPONS: {post.path_weapons}</h2>
