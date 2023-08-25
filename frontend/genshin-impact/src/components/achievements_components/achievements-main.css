@@ -9,6 +9,13 @@
 
 /* achievements-main.css */
 
+.card-container{
+  display: flex; /* Exibir os cartões em linha */
+  flex-wrap: wrap; /* Quebrar para a próxima linha, se necessário */
+  justify-content: center; /* Centralizar os cartões horizontalmente */
+  gap: 20px; /* Espaçamento entre os cartões */
+}
+
 .card-achievement {
   background-color: #f5f5f5;
   border: 1px solid #ccc;

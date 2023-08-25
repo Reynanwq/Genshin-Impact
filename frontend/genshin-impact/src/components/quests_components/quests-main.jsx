@@ -18,7 +18,7 @@ function Quests_main(){
 
 
   return(
-    <div>
+    <div className="card-container">
       {posts.map((post, key) => (
       <div key={key} className="card-achievement">
       <img src={imgTest} alt="IMG TEST" />
