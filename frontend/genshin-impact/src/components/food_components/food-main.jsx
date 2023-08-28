@@ -20,7 +20,9 @@ function Food_main(){
     <div className="card-container">
       {posts.map((post, key) => (
         <div key={key} className="card-achievement">
+          <div className="food-image">
           <img src={post.url} alt="IMG TEST" />
+          </div>
             <h2>Name: <span>{post.food_name}</span></h2>
             <h2>Description: <span>{post.food_description}</span></h2>
             <h2>Rarity: <span>{post.rarity}</span></h2>
