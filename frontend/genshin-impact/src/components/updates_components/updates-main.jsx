@@ -20,13 +20,13 @@ function Updates_main(){
        {posts.map((post, key) => (
         <div key={key} className="card-achievement">
         <img src={post.url} alt="IMG TEST" />
-          <h2>PATH-VERSION: {post.path_version}</h2>
-          <h2>NAME: {post.path_name}</h2>
-          <h2>STATUS: {post.path_status}</h2>
-          <h2>WEAPONS: {post.path_weapons}</h2>
-          <h2>CHARACTERS: {post.path_characters}</h2>
-          <h2>TIME: {post.path_time}</h2>
-          <h2>CHARACTERS LIMITED: {post.path_characters_limited}</h2>
+          <h2>Path-Version: <span>{post.path_version}</span></h2>
+          <h2>Name: <span>{post.path_name}</span></h2>
+          <h2>Status: <span>{post.path_status}</span></h2>
+          <h2>Weapons: <span>{post.path_weapons}</span></h2>
+          <h2>Characters: <span>{post.path_characters}</span></h2>
+          <h2>Time: <span>{post.path_time}</span></h2>
+          <h2>Characters Limited: <span>{post.path_characters_limited}</span></h2>
       </div>
       ))}
     </div>

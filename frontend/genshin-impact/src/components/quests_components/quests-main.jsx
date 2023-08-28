@@ -22,12 +22,12 @@ function Quests_main(){
       {posts.map((post, key) => (
       <div key={key} className="card-achievement">
       <img src={imgTest} alt="IMG TEST" />
-        <h2>NAME: {post.quests_name}</h2>
-        <h2>DESCRIPTION: {posts.quests_description}</h2>
-        <h2>REWARD: {posts.quests_reward}</h2>
-        <h2>CHAPTER: {post.quests_chapter}</h2>
-        <h2>ACTS: {post.quests_acts}</h2>
-        <h2>RANK: {post.adventure_rank}</h2>
+        <h2>Name: <span>{post.quests_name}</span></h2>
+        <h2>Description: <span>{posts.quests_description}</span></h2>
+        <h2>Reward: <span>{posts.quests_reward}</span></h2>
+        <h2>Chapter: <span>{post.quests_chapter}</span></h2>
+        <h2>Acts: <span>{post.quests_acts}</span></h2>
+        <h2>Rank: <span>{post.adventure_rank}</span></h2>
       </div>
       ))}
     </div>

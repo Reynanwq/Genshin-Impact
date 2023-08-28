@@ -21,15 +21,15 @@ function Weapons_main(){
       {posts.map((post, key) => (
       <div key={key} className="card-achievement">
         <img src={post.url} alt="IMG TEST" />
-          <h2>NAME: </h2>
-          <h2>TYPE: </h2>
-          <h2>DESCRIPTION: </h2>
-          <h2>BASIC ATACK:</h2>
-          <h2>BASIC-DEFENSE </h2>
-          <h2>CRITICK DAMAGA</h2>
-          <h2>LEVEL:</h2>
-          <h2>ASCENSION:</h2>
-          <h2>AMOUNT STARS:</h2>
+          <h2>Name: <span>{post.achievements_name}</span></h2>
+          <h2>Type: <span>{post.arco}</span></h2>
+          <h2>Description: <span>{post.achievements_description}</span></h2>
+          <h2>Basic Atack: <span>{post.basic_attack}</span></h2>
+          <h2>Basic-Defense <span>{post.basic_defense}</span></h2>
+          <h2>Critck-Damage <span>{post.crit_damage}</span></h2>
+          <h2>Level: <span>{post.level}</span></h2>
+          <h2>Ascension: <span>{post.ascension}</span></h2>
+          <h2>Amount-Stars: <span>{post.amounts_stars}</span></h2>
       </div>
       ))}
     </div>

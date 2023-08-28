@@ -21,14 +21,14 @@ function character_main(){
       {posts.map((post, key) => (
         <div key={key} className="card-achievement">
           <img src={post.url} alt="IMG FROM CHARACTER" />
-          <h2>NAME: {post.name}</h2>
-          <h2>TYPE: {post.type}</h2>
-          <h2>DESCRIPTION: {post.description}</h2>
-          <h2>RELEASE DATE: {post.release_date}</h2>
-          <h2>GENDER: {post.gender}</h2>
-          <h2>SKILLS: {post.skills}</h2>
-          <h2>PASSIVE-TALENT: {post.passive_talent}</h2>
-          <h2>CONSTELATIONS: {post.constellations}</h2>
+          <h2>Name: <span>{post.name}</span></h2>
+          <h2>Type: <span>{post.type}</span></h2>
+          <h2>Description: <span>{post.description}</span></h2>
+          <h2>Release Date: <span>{post.release_date}</span></h2>
+          <h2>Gender: <span>{post.gender}</span></h2>
+          <h2>Skills: <span>{post.skills}</span></h2>
+          <h2>Passive-Talent: <span>{post.passive_talent}</span></h2>
+          <h2>Constelations: <span>{post.constellations}</span></h2>
         </div>
       ))}
     </div>
