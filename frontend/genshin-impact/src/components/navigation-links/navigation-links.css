@@ -22,14 +22,14 @@ section h2{
   display: flex;
   flex-wrap: wrap;  
   justify-content: space-arround;
- /* margin-top: 20px;*/
+  margin-top: 20px;
 }
 
 
 .navigation-links h3 {
   margin: 8px 0;
   cursor: pointer;
-  color: #59554e;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,11 +37,10 @@ section h2{
   transition: background-color 0.2s, color 0.2s;
   text-decoration: none !important;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 27px;
+  font-size: 35px;
 }
 
 .navigation-links h3:hover {
-  background-color: #f3f4e5;
   color: #a1c1be;
 }
 
@@ -59,9 +58,9 @@ section h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px; /* Ajuste o tamanho da caixa conforme necessário */
-  height: 168px; /* Ajuste o tamanho da caixa conforme necessário */
-  background-color: #a1c1be; /* Cor de fundo azul */
+  width: 238px; /* Ajuste o tamanho da caixa conforme necessário */
+  height: 238px; /* Ajuste o tamanho da caixa conforme necessário */
+  background-color: #111; /* Cor de fundo azul */
   border-radius: 10px; /* Borda arredondada */
   margin: 20px;
   margin-bottom: 5px;
@@ -74,7 +73,60 @@ section h2{
   box-sizing: border-box;
 }
 
-.nav_box:hover {
-  background-color: #f3f4e5; /* Cor de fundo azul mais escura ao passar o mouse */
-  color: #a1c1be; /* Cor do texto ao passar o mouse */
-} 
+.nav_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 238px; /* Ajuste o tamanho da caixa conforme necessário */
+  height: 238px; /* Ajuste o tamanho da caixa conforme necessário */
+  background-color: #111;
+  border-radius: 10px;
+  margin: 20px;
+  margin-bottom: 5px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.nav_box:before,
+.nav_box:after {
+  /* Mova as regras em comum aqui */
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.nav_box:before {
+  /* Mova as regras específicas do brilho aqui */
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav_box:hover:before {
+  opacity: 1;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
