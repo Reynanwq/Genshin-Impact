@@ -21,9 +21,9 @@ public class CrudWeaponsService {
     public void insertData(){
         //about the PATH, is "../../assets/weapons/" for everybody that stay here
 
-        Weapons agitação_trovejante = new Weapons(1, "Agitação Trovejante", "Arco", "Um arco longo que foi dado a alguém pela Shogun. Ele emite raios que nunca se apagam.", 46, 0, 14, 1, 0, 5, "../../assets/weapons/thundering_pulse.webp");
-        Weapons aqua_simulacra = new Weapons(2, "Aqua Simulacra", "Arco", "A cor desse arco longo muda imprevisivelmente. Sob a luz, possui um brilho azulado como água.", 44, 0, 19, 1, 0, 5, "../../assets/weapons/aqua_simulacra.webp");
-       /* Weapons weapons0 = new Weapons(3, "", "", "", 0, 0, 0, 0, 0, 0, "../../assets/updates/");
+        Weapons thundering_pulse = new Weapons(1, "Thundering Pulse", "Bow", "A longbow that was bestowed upon someone by the Shogun. It emits unceasing lightning.", 46, 0, 14, 1, 0, 5, "../../assets/weapons/thundering_pulse.webp");
+        Weapons aqua_simulacra = new Weapons(2, "Aqua Simulacra", "Bow", "The color of this longbow changes unpredictably. Under the light, it gleams with a bluish water-like shine.", 44, 0, 19, 1, 0, 5, "../../assets/weapons/aqua_simulacra.webp");
+      /* Weapons weapons0 = new Weapons(3, "", "", "", 0, 0, 0, 0, 0, 0, "../../assets/updates/");
         Weapons weapons0 = new Weapons(4, "", "", "", 0, 0, 0, 0, 0, 0, "");
         Weapons weapons0 = new Weapons(5, "", "", "", 0, 0, 0, 0, 0, 0, "");
         Weapons weapons0 = new Weapons(6, "", "", "", 0, 0, 0, 0, 0, 0, "");
@@ -112,7 +112,7 @@ public class CrudWeaponsService {
         Weapons weapons0 = new Weapons(89, "", "", "", 0, 0, 0, 0, 0, 0, "");
         Weapons weapons0 = new Weapons(90, "", "", "", 0, 0, 0, 0, 0, 0, "");*/
 
-        this.weaponsRepository.save(agitação_trovejante);
+        this.weaponsRepository.save(thundering_pulse);
         this.weaponsRepository.save(aqua_simulacra);
         System.out.println("Save weapons in database");
     }

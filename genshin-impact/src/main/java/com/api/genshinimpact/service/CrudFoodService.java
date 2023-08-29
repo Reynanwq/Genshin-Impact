@@ -22,7 +22,7 @@ public class CrudFoodService {
         //about the PATH, is "../../assets/food/" for everybody that stay here
 
         //COMIDAS DO TIPO NORMAL
-        Food arroz_mistura_de_aaru = new Food(1, "Arroz Mistura de Aaru", "Restaura 50 de Stamina", 2, "Normal", "../../assets/food/aaru_mixed_rice_normal.webp");
+        Food aaru_mixed_rice = new Food(1, "Aaru Mixed Rice", "Restores 50 Stamina", 2, "Normal", "../../assets/food/aaru_mixed_rice_normal.webp");
         Food tentacao_dos_adeptos = new Food(2, "Tentação dos Adeptus", "Aumenta o ATQ em 316 e a Taxa CRIT em 10% de todos os personagens da equipe por 300s. No modo multijogador, terá efeito em si mesmo.", 5, "Normal", "../../assets/food/");
         Food sanduiche_aventureiro = new Food(3, "Sanduíche do Aventureiro", "Aumenta o ATQ de todos os membros da Equipe em 194 por 300s. No modo multijogador, terá efeito em si mesmo.", 3, "Normal", "../../assets/food/");
         Food tofu_amendoas = new Food(4, "Tofu de Amêndoas", "Aumenta o ATQ de todos os membros da Equipe em 81 por 300s. No modo multijogador, terá efeito em si mesmo.", 2, "Normal", "../../assets/food/");
@@ -178,7 +178,7 @@ public class CrudFoodService {
         //COMIDAS DO TIPO ESPECIAL
         Food cuidado_extremo = new Food(146, "Cuidado Extremo", "Restaura 80 de Stamina", 2, "Especial", "");
 
-        this.foodRepository.save(arroz_mistura_de_aaru);
+        this.foodRepository.save(aaru_mixed_rice);
     }
 
     //----------- SELECIONAR DADOS DA TABELA FOOD ----------

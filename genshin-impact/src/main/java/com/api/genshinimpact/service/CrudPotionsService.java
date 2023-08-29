@@ -19,11 +19,11 @@ public class CrudPotionsService {
     public void insertData(){
         //about the PATH, is "../../assets/potions/" for everybody that stay here
 
-        Potions pocao_dentrocida = new Potions(1, "Poção Dendrocida", 3, "Aumenta RES Dentro de todos os membros da Equipe em 25% por 300s.", "../../assets/potions/dendrocide_potion.webp");
-        Potions pocao_protetora = new Potions(2, "Poção Protetora", 3, "Aumenta a RES Dendro de todos os membros da Equipe em 25% por 300s.", "../../assets/potions/desiccant_potion.webp");
+        Potions dendrocide_potion = new Potions(1, "Dendrocide Potion", 3, "Increases DEF of all party members by 25% for 300s.", "../../assets/potions/dendrocide_potion.webp");
+        Potions protective_potion = new Potions(2, "Protective Potion", 3, "Increases Dendro RES of all party members by 25% for 300s.", "../../assets/potions/desiccant_potion.webp");
 
-        this.potionsRepository.save(pocao_dentrocida);
-        this.potionsRepository.save(pocao_protetora);
+        this.potionsRepository.save(dendrocide_potion);
+        this.potionsRepository.save(protective_potion);
         System.out.println("Save potions on database");
     }
 

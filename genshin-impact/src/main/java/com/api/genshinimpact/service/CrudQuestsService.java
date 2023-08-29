@@ -19,7 +19,7 @@ public class CrudQuestsService {
 
     public void insertData(){
         /*----------------- MISSÕES DO ARCODONTE ---------------*/
-        Quests quests0 = new Quests(1, "Missões do Arcodonte", "COPIAR DEPOIS", "NOME DAS RECONPENSAS", "PRÓLOGO: O Forasteiro que Voa a Favor do Vento", "Ato I: O Forasteiro que Voa a Favor do Vento -> Ato II: -> Ato III:", 0);
+        Quests quests0 = new Quests(1, "Archon Quests", "COPY LATER", "REWARD NAMES", "Prologue: The Outsider Who Soars Amid the Wind", "Act I: The Outsider Who Soars Amid the Wind -> Act II: -> Act III:", 0);
        /* Quests quests0 = new Quests(2, "Missões de Arcodonte", "COPIAR DEPOIS", "NOME DAS RECONPENSAS", "", "", 0);
         Quests quests0 = new Quests(2, "Missões de Arcodonte", "COPIAR DEPOIS", "NOME DAS RECONPENSAS", "", "", 0);
         Quests quests0 = new Quests(2, "Missões de Arcodonte", "COPIAR DEPOIS", "NOME DAS RECONPENSAS", "", "", 0);
