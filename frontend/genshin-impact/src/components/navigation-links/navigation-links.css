@@ -52,7 +52,7 @@ section h2{
 
 /* Adicione uma classe específica para remover sublinhado */
 .no-underline {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .nav_box {
@@ -71,6 +71,7 @@ section h2{
   transition: background-color 0.2s, color 0.2s;
   font-family: 'Josefin Sans', sans-serif;
   color: #fff; /* Cor do texto */
+  box-sizing: border-box;
 }
 
 .nav_box:hover {
