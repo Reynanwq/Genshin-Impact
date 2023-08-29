@@ -16,3 +16,8 @@ header h1{
   font-family: 'Rubik Wet Paint', cursive;
   font-size: 40px;
 }
+
+.image_from_home_header {
+  width: 50px; 
+  height: auto;
+}
