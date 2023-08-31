@@ -48,11 +48,12 @@ public class CrudCharactersService {
         Characters Bennett = new Characters(9, "Bennett", "Adventurers' Guild", 90, "A kind and righteous Mondstadt adventurer, but also incredibly unlucky.", "03/2022", "Male", "Normal Attack: Strike of Fortune | Passion Overload | Fantastic Voyage", "Rekindle | Fearnaught | It Should Be Safe...", "Expectation | Rekindle | Fearnaught | It Should Be Safe... | Rekindle: Unleashed | Fearnaught: Ascension Phase 4 | Rekindle: Unleashed: Ascension Phase 1", "../../assets/characters/bennett.webp");
         Characters Candance = new Characters(10, "Candace", "Aaru Village", 90, "Guardian of Aaru Village, a descendant of the King Deshret, her left eye is the color of amber.", "09/2022", "Female", "Normal Attack: Radiant Lance - Guardian Form | Sacred Ritual: Guardian Crane | Sacred Ritual: Flock of Ravens", "Plume Protection | Sand's Arc | Primordial Aurora", "Heir of the Resplendent Sands | Moon-Piercing Radiance | Hunt Devotion | Sentinel's Oath | Gilded Eyes | The Flood", "../../assets/characters/candace.webp");
         Characters Collei = new Characters(11, "Collei", "Gandharva Village", 90, "An aspiring forest ranger patrolling the Avidya Forest. Behind her enthusiasm lies a rather introverted personality.", "08/2022", "Female", "Normal Attack: Homage to Archery | Petal Weave | Miauvilhoso Secret", "Floral Frenzy | Forest Rhythms | Sumeru Champion", "Forest Patrol | Through the Hills and Woods | Aroma of Summer", "../../assets/characters/collei.webp");
-/*
-        Characters Cyno = new Characters(12, "Cyno", "", 1-90, "", "03/2023", "Masculino", "", "", "../../assets/characters/");
-        Characters Dehya = new Characters(13, "Dehya", "", 1-90, "", "03/2023", "Feminino", "", "", "../../assets/characters/");
-        Characters Diluc = new Characters(14, "Diluc", "", 1-90, "", "09/2020", "Masculino", "", "", "../../assets/characters/");
-        Characters Diona = new Characters(15, "Diona", "", 1-90, "", "11//2020", "Feminino", "", "", "../../assets/characters/");
+        Characters Cyno = new Characters(12, "Cyno", "Judicator of Secrets", 90, "The General Mahamatra in charge of supervising the researchers of the Akademiya. It is said that when he gets down to work, the General Mahamatra is even more efficient than the Great Vayuvyastra made by the Kshahrewar. Temple of Silence", "03/2023", "Masculino", "Ataque Normal: Lança da Invocação | Ritual Secreto: Travessia Abissal | Ritual Sagrado: Agilidade Lupina", "Julgamento das Plumas | Soberania dos Nove Arcos | O Dom do Silêncio", "Ordinance: Unceasing Vigil | Ceremony: Homecoming of Spirits | Precept: Lawful Enforcer |  Austerity: Forbidding Guard | Funerary Rite: The Passing of Starlight | Raiment: Just Scales", "../../assets/characters/cyno.webp");
+        Characters Dehya = new Characters(13, "Dehya", "The Eremites", 90, "A member of the Eremites, a mercenary organization that roams the sands of Sumeru. Valiant and powerful, she enjoys great fame amongst her fellow Eremites.", "03/2023", "Femal-e", "Normal Attack: Sandstorm Assault | Molten Inferno | Leonine Bite", "Unstinting Succor | Stalwart and True | The Sunlit Way", "The Flame Incandescent | The Sand-Blades Glittering | A Rage Swift as Fire | An Oath Abiding | The Alpha Unleashed | The Burning Claws Cleaving", "../../assets/characters/dehya.webp");
+        Characters Diluc = new Characters(14, "Diluc", "The Dark Side of Dawn", 90, "The tycoon of a winery empire in Mondstadt, unmatched in every possible way. Dawn Winery", "09/2020", "Male", "Normal Attack: Tempered Sword | Searing Onslaught | Dawn", "Relentless | Blessing of Phoenix | Tradition of the Dawn Knight", "Conviction | Searing Ember | Fire and Steel | Flowing Flame | Phoenix, Harbinger of Dawn | Flaming Sword, Nemesis of the Dark", "../../assets/characters/diluc.webp");
+        Characters Diona = new Characters(15, "Diona", "Kätzlein Cocktail", 90, "A young lady who has inherited trace amounts of non-human blood. She is the incredibly popular bartender of the Cat's Tail tavern. The Cat's Tail.", "11//2020", "Female", "Normal Attack: Kätzlein Style | Icy Paws | Signature Mix","Cat's Tail Secret Menu | Drunkards' Farce | Complimentary Bar Food", "A Lingering Flavor | Shaken, Not Purred | A—Another Round? | Wine Industry Slayer | Double Shot, on the Rocks | Cat's Tail Closing Time", "../../assets/characters/diona.webp");
+        /*
+
         Characters Dori = new Characters(16, "Dori", "", 1-90, "", "09/2022", "Feminino", "", "", "../../assets/characters/");
         Characters Eula = new Characters(17, "Eula", "", 1-90, "", "05/2021", "Feminino", "", "", "../../assets/characters/");
         Characters Faruzan = new Characters(18, "Faruzan", "", 1-90, "", "07/2022", "Feminino", "", "", "../../assets/characters/");
@@ -121,11 +122,11 @@ public class CrudCharactersService {
         this.charactersRepository.save(Barbara);
         this.charactersRepository.save(Candance);
         this.charactersRepository.save(Collei);
-/*
         this.charactersRepository.save(Cyno);
         this.charactersRepository.save(Dehya);
         this.charactersRepository.save(Diluc);
         this.charactersRepository.save(Diona);
+/*
         this.charactersRepository.save(Dori);
         this.charactersRepository.save(Eula);
         this.charactersRepository.save(Faruzan);

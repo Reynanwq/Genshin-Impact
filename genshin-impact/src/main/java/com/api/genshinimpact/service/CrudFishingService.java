@@ -23,23 +23,23 @@ public class CrudFishingService {
 
         //LOCALIZADOS NA REGIAO DE MONDSTADT
         Fishing Medaka_mondstadt = new Fishing(1, "Medaka", "Mondstadt", "../../assets/fishing/medaka.webp");
-        Fishing Medaka_Azulado_mondstadt = new Fishing(2, "Medaka Azulado", "Mondstadt", "../../assets/fishing/");
-        Fishing Peixe_leão_Esgana_Gato_mondstadt = new Fishing(3, "Peixe-leão Esgana-Gato", "Mondstadt", "../../assets/fishing/");
-        Fishing Shirakodai_Cor_de_Chá_mondstadt = new Fishing(4, "Shirakodai Cor de Chá", "Mondstadt", "../../assets/fishing/");
-        Fishing Apanhador_da_Aurora_mondstadt = new Fishing(5, "Apanhador da Aurora", "Mondstadt", "../../assets/fishing/");
-        Fishing Peixe_Cristal_mondstadt = new Fishing(6, "Peixe Cristal", "Mondstadt", "../../assets/fishing/");
-        Fishing Koi_Dourado_mondstadt = new Fishing(7, "Koi Dourado", "Mondstadt", "../../assets/fishing/");
-        Fishing Akai_Maou_mondstadt = new Fishing(8, "Akai Maou", "Mondstadt", "../../assets/fishing/");
-        Fishing Fugu_mondstadt= new Fishing(9, "Fugu", "Mondstadt", "../../assets/fishing/");
-        Fishing Fugu_Amargo_mondstadt = new Fishing(10, "Fugu Amargo", "Mondstadt", "../../assets/fishing/");
-        Fishing Koi_Enferrujado_mondstadt = new Fishing(11, "Koi Enferrujado", "Mondstadt", "../../assets/fishing/");
-        Fishing Rei_da_Neve_mondstadt = new Fishing(12, "Rei da Neve", "Mondstadt", "../../assets/fishing/");
+        Fishing Medaka_Azulado_mondstadt = new Fishing(2, "Blue Medaka", "Mondstadt", "../../assets/fishing/aizen_medaka.webp");
+        Fishing Peixe_leão_Esgana_Gato_mondstadt = new Fishing(3, "Catscratch Lionfish", "Mondstadt", "../../assets/fishing/venomspine_fish.webp");
+        Fishing Shirakodai_Cor_de_Chá_mondstadt = new Fishing(4, "Tea-Colored Shirakodai", "Mondstadt", "../../assets/fishing/teacolored_shirakodai.webp");
+        Fishing Apanhador_da_Aurora_mondstadt = new Fishing(5, "Dawncatcher", "Mondstadt", "../../assets/fishing/dawncatcher.webp");
+        Fishing Peixe_Cristal_mondstadt = new Fishing(6, "Crystal Fish", "Mondstadt", "../../assets/fishing/crystalfish.webp");
+        Fishing Koi_Dourado_mondstadt = new Fishing(7, "Golden Koi", "Mondstadt", "../../assets/fishing/golden_koi.webp");
+        Fishing Akai_Maou_mondstadt = new Fishing(8, "Red Akaimaou", "Mondstadt", "../../assets/fishing/akai_maou.webp");
+        Fishing Fugu_mondstadt= new Fishing(9, "Fugu", "Mondstadt", "../../assets/fishing/pufferfish.webp");
+        Fishing Fugu_Amargo_mondstadt = new Fishing(10, "Bitter Fugu", "Mondstadt", "../../assets/fishing/bitter_pufferfish.webp");
+        Fishing Koi_Enferrujado_mondstadt = new Fishing(11, "Rusty Koi", "Mondstadt", "../../assets/fishing/rusty_koi.webp");
+        Fishing Rei_da_Neve_mondstadt = new Fishing(12, "Snow King", "Mondstadt", "../../assets/fishing/snowstrider.webp");
 
         //LOCALIZADOS NA REGIAO DE LIYUE
-        Fishing Dawncatcher_liyue = new Fishing(13, "Dawncatcher", "Liyue", "../../assets/fishing/");
-        Fishing Flor_Doce_Medaka_liyue = new Fishing(14, "Flor Doce Medaka", "Liyue", "../../assets/fishing/");
-        Fishing Apanhador_da_Aurora_liyue = new Fishing(15, "Apanhador da Aurora", "Liyue", "../../assets/fishing/");
-        Fishing Peixe_Cristal_liyue = new Fishing(16, "Peixe Cristal", "Liyue", "../../assets/fishing/");
+        Fishing Dawncatcher_liyue = new Fishing(13, "Dawncatcher", "Liyue", "../../assets/fishing/dawncatcher.webp");
+        Fishing Flor_Doce_Medaka_liyue = new Fishing(14, "Sweet-Flower Medaka", "Liyue", "../../assets/fishing/sweetflower_medaka.webp");
+        Fishing Apanhador_da_Aurora_liyue = new Fishing(15, "Apanhador da Aurora", "Liyue", "../../assets/fishing/  ");
+        Fishing Peixe_Cristal_liyue = new Fishing(16, "Crystal Fish", "Liyue", "../../assets/fishing/crystalfish.webp");
         Fishing Betta_Esgana_Gato_liyue = new Fishing(17, "Betta Esgana-Gato", "Liyue", "../../assets/fishing/");
         Fishing Shirakodai_Marrom_liyue = new Fishing(18, "Shirakodai Marrom", "Liyue", "../../assets/fishing/");
         Fishing Fugu_Amargo_liyue = new Fishing(19, "Fugu Amargo", "Liyue", "../../assets/fishing/");
@@ -98,6 +98,20 @@ public class CrudFishingService {
         Fishing PêssegodasOndasProfundas_sumeru = new Fishing(65, "Pêssego das Ondas Profundas", "Sumeru", "../../assets/fishing/");
 
         this.fishingRepository.save(Medaka_mondstadt);
+        this.fishingRepository.save(Medaka_Azulado_mondstadt);
+        this.fishingRepository.save(Peixe_leão_Esgana_Gato_mondstadt);
+        this.fishingRepository.save(Shirakodai_Cor_de_Chá_mondstadt);
+        this.fishingRepository.save(Apanhador_da_Aurora_mondstadt);
+        this.fishingRepository.save(Peixe_Cristal_mondstadt);
+        this.fishingRepository.save(Koi_Dourado_mondstadt);
+        this.fishingRepository.save(Akai_Maou_mondstadt);
+        this.fishingRepository.save(Fugu_mondstadt);
+        this.fishingRepository.save(Fugu_Amargo_mondstadt);
+        this.fishingRepository.save(Koi_Enferrujado_mondstadt);
+        this.fishingRepository.save(Rei_da_Neve_mondstadt);
+        this.fishingRepository.save(Dawncatcher_liyue);
+        this.fishingRepository.save(Flor_Doce_Medaka_liyue);
+        this.fishingRepository.save(Peixe_Cristal_liyue);
         System.out.println("Fishing Send to database!");
     }
 

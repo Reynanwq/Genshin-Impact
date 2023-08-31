@@ -20,7 +20,7 @@ function fishing_main(){
     <div className="card-container">
       {posts.map((post, key) => (
         <div key={key} className="card-achievement">
-          <img src={post.url} alt="IMG TEST" />
+          <img src={post.url} alt="IMG TEST" className="fish_img"/>
             <h2>Name: <span>{post.fish_name}</span></h2>
             <h2>Localization: <span>{post.localization}</span></h2>
           </div>

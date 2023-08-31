@@ -23,20 +23,23 @@ public class CrudFoodService {
 
         //COMIDAS DO TIPO NORMAL
         Food aaru_mixed_rice = new Food(1, "Aaru Mixed Rice", "Restores 50 Stamina", 2, "Normal", "../../assets/food/aaru_mixed_rice_normal.webp");
-        Food tentacao_dos_adeptos = new Food(2, "Tentação dos Adeptus", "Aumenta o ATQ em 316 e a Taxa CRIT em 10% de todos os personagens da equipe por 300s. No modo multijogador, terá efeito em si mesmo.", 5, "Normal", "../../assets/food/");
-        Food sanduiche_aventureiro = new Food(3, "Sanduíche do Aventureiro", "Aumenta o ATQ de todos os membros da Equipe em 194 por 300s. No modo multijogador, terá efeito em si mesmo.", 3, "Normal", "../../assets/food/");
-        Food tofu_amendoas = new Food(4, "Tofu de Amêndoas", "Aumenta o ATQ de todos os membros da Equipe em 81 por 300s. No modo multijogador, terá efeito em si mesmo.", 2, "Normal", "../../assets/food/");
-        Food baklava = new Food(5, "Baklava", "Aumenta a Taxa CRIT de todos os membros da Equipe em 15% por 300s. No modo multijogador, terá efeito em si mesmo.", 3, "Normal", "../../assets/food/");
-        Food sopa_bambu = new Food(6, "Sopa de Bambu", "Restaura 28% da Vida Máxima do personagem selecionado e regenera 620 de Vida a cada 5s por 30s.", 3, "Normal", "../../assets/food/");
-        Food mizu_manjuu_de_baga = new Food(7, "Mizu Manjuu de Baga", "Restaura 20% da Vida Máxima do personagem selecionado e regenera 390 de Vida a cada 5s por 30s.", 2, "Normal", "../../assets/food/");
-        Food ensopado_do_arconde_anemo = new Food(8, "Ensopado do Arconte Anemo", "Diminui o consumo de Stamina ao correr e planar de todos os membros da Equipe em 20% por 900s. Durante o modo multijogador, este efeito tem efeito apenas em si mesmo.", 3, "Normal", "../../assets/food/");
-        Food sushi_de_ovo_de_passaro = new Food(9, "Sushi de Ovo de Pássaro", "Restaura 9% de Vida Máxima e 1000 de Vida adicional para o personagem selecionado.", 1, "Normal", "../../assets/food/");
-        Food biryani = new Food(10, "Biryani", "Aumenta a DEF em 261 e o Efeito de Cura em 8% de todos os personagens da equipe por 300s. Durante o modo multijogador, este efeito é aplicado apenas em si mesmo.", 4, "Normal", "../../assets/food/");
-        Food ensopado_de_poleiro_com_dorso_negro = new Food(11, "Ensopado de Poleiro com Dorso Negro", "Restaura 28% da Vida Máxima do personagem selecionado e regenera 620 de Vida a cada 5s por 30s.", 3, "Normal", "../../assets/food/");
-        Food abundancia_anual = new Food(12, "Abundância Anual", "Aumenta o ATQ em 272 e a Taxa CRIT em 8% de todos os personagens da equipe por 300s. No modo multijogador, terá efeito em si mesmo.", 4, "Normal", "../../assets/food/");
-        Food carneBestialRefogada = new Food(13, "Carne Bestial Refogada", "Aumenta o Dano Físico de todos os membros do Grupo em 30% por 300s. No modo multijogador, terá efeito em si mesmo.", 3, "Normal", "../../assets/food/");
-        Food frangoNaManteiga = new Food(14, "Frango na Manteiga", "Aumenta o ATQ de todos os membros da Equipe em 194 por 300s. Durante o modo multijogador, este efeito é aplicado apenas em si mesmo.", 3, "Normal", "../../assets/food/");
-        Food caranguejoNaManteiga = new Food(15, "Caranguejo na Manteiga", "Aumenta a DEF em 261 e o Efeito de Cura em 8% de todos os personagens da equipe por 300s. No modo multijogador, terá efeito em si mesmo.", 4, "Normal", "../../assets/food/");
+        Food tentacao_dos_adeptos = new Food(2, "Adeptus Temptation", "Increases all party members' ATK by 316 and CRIT Rate by 10% for 300s. In multiplayer mode, this effect only applies to your own character.", 5, "Normal", "../../assets/food/adeptus_temptation_normal.webp");
+        Food sanduiche_aventureiro = new Food(3, "Adventurer's Sandwich", "Increases all party members' ATK by 194 for 300s. In multiplayer mode, this effect only applies to your own character.", 3, "Normal", "../../assets/food/adventurers_breakfast_sandwich_normal.webp");
+        Food tofu_amendoas = new Food(4, "Almond Tofu", "Increases all party members' ATK by 81 for 300s. In multiplayer mode, this effect only applies to your own character.", 2, "Normal", "../../assets/food/almond_tofu_normal.webp");
+        Food baklava = new Food(5, "Baklava", "Increases all party members' CRIT Rate by 15% for 300s. In multiplayer mode, this effect only applies to your own character.", 3, "Normal", "../../assets/food/baklava_normal.webp");
+        Food sopa_bambu = new Food(6, "Bamboo Shoot Soup", "Restores 28% of the selected character's Max HP and regenerates 620 HP every 5s for 30s.", 3, "Normal", "../../assets/food/bamboo_shoot_soup_normal.webp");
+        Food mizu_manjuu_de_baga = new Food(7, "Berry Mizu Manjuu", "Restores 20% of the selected character's Max HP and regenerates 390 HP every 5s for 30s.", 2, "Normal", "../../assets/food/berry_mizu_manjuu_normal.webp");
+        Food ensopado_do_arconde_anemo = new Food(8, "Windborne Archon's Dilemma", "Reduces Stamina consumption when sprinting and gliding for all party members by 20% for 900s. In multiplayer mode, this effect only applies to your own character.", 3, "Normal", "../../assets/food/barbatos_ratatouille_normal.webp");
+        Food sushi_de_ovo_de_passaro = new Food(9, "Bird Egg Sushi", "Restores 9% of Max HP and an additional 1000 HP to the selected character.", 1, "Normal", "../../assets/food/bird_egg_sushi_normal.webp");
+        Food biryani = new Food(10, "Biryani", "Increases DEF by 261 and Healing Effect by 8% for all team characters for 300s. During multiplayer mode, this effect is applied only to oneself.", 4, "Normal", "../../assets/food/biryani_normal.webp");
+        Food ensopado_de_poleiro_com_dorso_negro = new Food(11, "Black-Back Perch Stew", "Restores 28% of the selected character's Maximum HP and regenerates 620 HP every 5s for 30s.", 3, "Normal", "../../assets/food/blackcak_perch_stew_normal.webp");
+        Food abundancia_anual = new Food(12, "Yearly Abundance", "Increases ATK by 272 and CRIT Rate by 8% for all team characters for 300s. In multiplayer mode, it will have an effect on oneself.", 4, "Normal", "../../assets/food/bountiful_year.webp");
+        Food carneBestialRefogada = new Food(13, "Beastly Stewed Meat", "Increases Physical Damage for all party members by 30% for 300s. In multiplayer mode, it will have an effect on oneself.", 3, "Normal", "../../assets/food/braised_meat_normal.webp");
+        Food frangoNaManteiga = new Food(14, "Butter Chicken", "Increases ATK of all team members by 194 for 300s. During multiplayer mode, this effect is applied only to oneself.", 3, "Normal", "../../assets/food/butter_chicken.webp_normal.webp");
+        Food caranguejoNaManteiga = new Food(15, "Butter Crab", "Increases DEF by 261 and Healing Effect by 8% for all team characters for 300s. In multiplayer mode, it will have an effect on oneself.", 4, "Normal", "../../assets/food/butter_carb_normal.webp");
+
+
+
         Food sopaDeLotusDeLeiteEFrutosDoMar = new Food(16, "Sopa de Lótus de Leite e Frutos do Mar", "Aumenta a DEF de todos os membros da Equipe em 200 por 300s. No modo multijogador, terá efeito em si mesmo.", 3, "Normal", "../../assets/food/");
         Food doceDeMelComTamaras = new Food(17, "Doce de Mel com Tâmaras", "Aumenta a DEF de todos os membros da Equipe em 200 por 300s. No modo multijogador, terá efeito em si mesmo.", 3, "Normal", "../../assets/food/");
         Food boloDeCocoCarvao = new Food(18, "Bolo de Coco-Carvão", "Revive um personagem e restaura 1200 de Vida.", 3, "Normal", "../../assets/food/");
@@ -166,7 +169,6 @@ public class CrudFoodService {
         Food wakatakeni = new Food(142, "Wakatakeni", "Aumenta a DEF de todos os membros da Equipe em 107 por 300s. No modo multijogador, terá efeito em si mesmo.", 1, "Normal", "../../assets/food/");
         Food chopSueyDeZhongyuan = new Food(143, "Chop Suey de Zhongyuan", "Diminui o consumo de Stamina ao correr e escalar de todos os membros da Equipe em 20% por 900s. Durante o modo multijogador, este efeito é aplicado apenas em si mesmo.", 1, "Normal", "../../assets/food/");
 
-
     
         //COMIDAS DO TIPO DELICIOSO
         Food arroz_mistura_de_aaru_delicioso = new Food(144, "Arroz Mistura de Aaru Delicioso", "Restaura 60 de Stamina", 2, "Delicioso", "");
@@ -179,6 +181,20 @@ public class CrudFoodService {
         Food cuidado_extremo = new Food(146, "Cuidado Extremo", "Restaura 80 de Stamina", 2, "Especial", "");
 
         this.foodRepository.save(aaru_mixed_rice);
+        this.foodRepository.save(tentacao_dos_adeptos);
+        this.foodRepository.save(sanduiche_aventureiro);
+        this.foodRepository.save(tofu_amendoas);
+        this.foodRepository.save(baklava);
+        this.foodRepository.save(sopa_bambu);
+        this.foodRepository.save(mizu_manjuu_de_baga);
+        this.foodRepository.save(ensopado_do_arconde_anemo);
+        this.foodRepository.save(sushi_de_ovo_de_passaro);
+        this.foodRepository.save(biryani);
+        this.foodRepository.save(ensopado_de_poleiro_com_dorso_negro);
+        this.foodRepository.save(abundancia_anual);
+        this.foodRepository.save(carneBestialRefogada);
+        this.foodRepository.save(frangoNaManteiga);
+        this.foodRepository.save(caranguejoNaManteiga);
     }
 
     //----------- SELECIONAR DADOS DA TABELA FOOD ----------
