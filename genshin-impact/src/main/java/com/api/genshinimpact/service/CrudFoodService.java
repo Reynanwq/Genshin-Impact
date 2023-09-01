@@ -32,11 +32,11 @@ public class CrudFoodService {
         Food ensopado_do_arconde_anemo = new Food(8, "Windborne Archon's Dilemma", "Reduces Stamina consumption when sprinting and gliding for all party members by 20% for 900s. In multiplayer mode, this effect only applies to your own character.", 3, "Normal", "../../assets/food/barbatos_ratatouille_normal.webp");
         Food sushi_de_ovo_de_passaro = new Food(9, "Bird Egg Sushi", "Restores 9% of Max HP and an additional 1000 HP to the selected character.", 1, "Normal", "../../assets/food/bird_egg_sushi_normal.webp");
         Food biryani = new Food(10, "Biryani", "Increases DEF by 261 and Healing Effect by 8% for all team characters for 300s. During multiplayer mode, this effect is applied only to oneself.", 4, "Normal", "../../assets/food/biryani_normal.webp");
-        Food ensopado_de_poleiro_com_dorso_negro = new Food(11, "Black-Back Perch Stew", "Restores 28% of the selected character's Maximum HP and regenerates 620 HP every 5s for 30s.", 3, "Normal", "../../assets/food/blackcak_perch_stew_normal.webp");
-        Food abundancia_anual = new Food(12, "Yearly Abundance", "Increases ATK by 272 and CRIT Rate by 8% for all team characters for 300s. In multiplayer mode, it will have an effect on oneself.", 4, "Normal", "../../assets/food/bountiful_year.webp");
+        Food ensopado_de_poleiro_com_dorso_negro = new Food(11, "Black-Back Perch Stew", "Restores 28% of the selected character's Maximum HP and regenerates 620 HP every 5s for 30s.", 3, "Normal", "../../assets/food/blackback_perch_stew_normal.webp");
+        Food abundancia_anual = new Food(12, "Yearly Abundance", "Increases ATK by 272 and CRIT Rate by 8% for all team characters for 300s. In multiplayer mode, it will have an effect on oneself.", 4, "Normal", "../../assets/food/bountiful_year_normal.webp");
         Food carneBestialRefogada = new Food(13, "Beastly Stewed Meat", "Increases Physical Damage for all party members by 30% for 300s. In multiplayer mode, it will have an effect on oneself.", 3, "Normal", "../../assets/food/braised_meat_normal.webp");
-        Food frangoNaManteiga = new Food(14, "Butter Chicken", "Increases ATK of all team members by 194 for 300s. During multiplayer mode, this effect is applied only to oneself.", 3, "Normal", "../../assets/food/butter_chicken.webp_normal.webp");
-        Food caranguejoNaManteiga = new Food(15, "Butter Crab", "Increases DEF by 261 and Healing Effect by 8% for all team characters for 300s. In multiplayer mode, it will have an effect on oneself.", 4, "Normal", "../../assets/food/butter_carb_normal.webp");
+        Food frangoNaManteiga = new Food(14, "Butter Chicken", "Increases ATK of all team members by 194 for 300s. During multiplayer mode, this effect is applied only to oneself.", 3, "Normal", "../../assets/food/butter_chicken_normal.webp");
+        Food caranguejoNaManteiga = new Food(15, "Butter Crab", "Increases DEF by 261 and Healing Effect by 8% for all team characters for 300s. In multiplayer mode, it will have an effect on oneself.", 4, "Normal", "../../assets/food/butter_crab_normal.webp");
 
 
 

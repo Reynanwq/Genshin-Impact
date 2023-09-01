@@ -16,14 +16,14 @@ function AppRoutes(){
     <BrowserRouter>
       <Routes>
               <Route path='/' element={<App />}/>
-              <Route path="/achievements" element={<Achievements />}/>
+              <Route path="/achievements" element={<Error />}/>
               <Route path="/characters" element={<Characters />}/>
               <Route path="/fishing" element={<Fishing />}/>
               <Route path="/food" element={<Food />}/>
               <Route path="/player" element={<Player />}/>
               <Route path="/potions" element={<Potions />}/>
-              <Route path="/quests" element={<Quests />}/>
-              <Route path="/statisticCharacter" element={<StatisticCharacter />}/>
+              <Route path="/quests" element={<Error />}/>
+              <Route path="/statisticCharacter" element={<Error />}/>
               <Route path="/updates" element={<Updates />}/>
               <Route path="/weapons" element={<Weapons />}/>
               <Route path='*' element={<Error />} /> 
