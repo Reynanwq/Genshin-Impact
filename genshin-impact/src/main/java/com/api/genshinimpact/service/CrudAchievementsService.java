@@ -6,6 +6,7 @@ import com.api.genshinimpact.entities.Characters;
 import com.api.genshinimpact.repository.AchievementsRepository;
 import com.api.genshinimpact.service.exceptions.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -543,8 +544,7 @@ public class CrudAchievementsService {
             System.out.println(achievement);
         }
     };
-
-    public List<Achievements> findALL(){
+    public List<Achievements>findALL(){
         return (List<Achievements>) achievementsRepository.findAll();
     }
     public AchievementsDTO findById(Integer id){

@@ -25,7 +25,7 @@ public class AchievementsController {
 
     @GetMapping
     public ResponseEntity<List<AchievementsDTO>> findAll(){
-        List<Achievements> list = achievementsService.findALL();
+        List<Achievements> list = (List<Achievements>) achievementsService.findALL();
         List<AchievementsDTO> listDto = list.stream().map(x -> new AchievementsDTO(x)).collect(Collectors.toList());
         return ResponseEntity.ok().body(listDto);
     }
