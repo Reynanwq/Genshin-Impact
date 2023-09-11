@@ -7,7 +7,7 @@ function fishing_main(){
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/fishing")
+    axios.get("https://sick-snail-production.up.railway.app/fishing")
       .then((response) => {
         setPosts(response.data);
       })

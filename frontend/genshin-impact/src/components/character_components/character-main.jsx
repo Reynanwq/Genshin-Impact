@@ -7,7 +7,7 @@ function CharacterMain() {
   const [selectedPostIndex, setSelectedPostIndex] = useState(null); // State to track selected post index
 
   useEffect(() => {
-    axios.get("http://localhost:8080/characters")
+    axios.get("https://sick-snail-production.up.railway.app/characters")
       .then((response) => {
         setPosts(response.data);
       })

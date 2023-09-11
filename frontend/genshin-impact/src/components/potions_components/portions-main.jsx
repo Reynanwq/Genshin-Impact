@@ -7,7 +7,7 @@ function Potions_main(){
   const[posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/potions")
+    axios.get("https://sick-snail-production.up.railway.app/potions")
     .then((response) => {
       setPosts(response.data);
     })

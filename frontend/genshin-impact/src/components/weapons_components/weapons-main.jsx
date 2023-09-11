@@ -7,7 +7,7 @@ function Weapons_main(){
   const[posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/weapons")
+    axios.get("https://sick-snail-production.up.railway.app/weapons")
     .then((response) => {
       setPosts(response.data);
     })

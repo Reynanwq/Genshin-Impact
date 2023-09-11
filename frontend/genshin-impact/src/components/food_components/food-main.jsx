@@ -7,7 +7,7 @@ function Food_main(){
   const[posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/foods")
+    axios.get("https://sick-snail-production.up.railway.app/foods")
     .then((response) => {
       setPosts(response.data);
     })

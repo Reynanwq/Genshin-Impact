@@ -6,7 +6,7 @@ function Updates_main(){
   const[posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/updates")
+    axios.get("https://sick-snail-production.up.railway.app/updates")
     .then((response) => {
       setPosts(response.data);
     })
