@@ -65,6 +65,6 @@ public abstract class Food implements Serializable {
         this.rarity = rarity;
     }
 
-    // Método abstrato a ser implementado nas subclasses
+    
     public abstract String getFoodType();
 }
